@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,8 +16,10 @@ import androidx.lifecycle.ViewModelProviders;
 import com.example.mengjiu.R;
 
 public class NotificationsFragment extends Fragment {
-
+    private Button loginButton;
     private NotificationsViewModel notificationsViewModel;
+
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -32,4 +35,7 @@ public class NotificationsFragment extends Fragment {
         });
         return root;
     }
+
+
+
 }

@@ -19,12 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_button" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="237dp"
@@ -105,7 +99,7 @@
         android:id="@+id/login_button"
         android:layout_width="248dp"
         android:layout_height="43dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:background="#03A9F4"
         android:text="登录账户"
         android:textColor="#F3EFEF"
@@ -120,10 +114,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="79dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="244dp"
         android:text="记住密码"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_passwrold" />
 
@@ -132,13 +127,14 @@
         android:layout_width="62dp"
         android:layout_height="27dp"
         android:layout_marginStart="97dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="85dp"
         android:text="@string/login_find_passworld"
         android:textAlignment="textEnd"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/login_radiaButton"
         app:layout_constraintTop_toBottomOf="@+id/login_passwrold" />
 

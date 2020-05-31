@@ -6,4 +6,16 @@
     <string name="title_myorder">我的</string>
     <string name="title_splash">欢迎进入梦酒</string>
     <string name="banquan_splash">© 最终解释权归梦酒所有</string>
+    <string name="logo"></string>
+    <string name="login_username">用户名</string>
+    <string name="login_passworld">密码</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">立即注册</string>
+    <string name="login_find_passworld">找回密码</string>
+    <string name="login_ok_passworld">确认密码</string>
+    <string name="login_phone">手机号</string>
+    <string name="register_man">男</string>
+    <string name="register_woman">女</string>
+    <string name="register_xingbie">性别:</string>
+    <string name="register_fanhui">返回</string>
 </resources>
