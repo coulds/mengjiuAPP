@@ -18,4 +18,5 @@
     <string name="register_woman">女</string>
     <string name="register_xingbie">性别:</string>
     <string name="register_fanhui">返回</string>
+    <string name="login_re">注册账户</string>
 </resources>
