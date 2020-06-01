@@ -14,7 +14,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        
+
         //实现从注册页面返回到登陆界面
         Button registerButton = findViewById(R.id.register_button1);
         registerButton.setOnClickListener(new View.OnClickListener() {
@@ -23,6 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
                 intent.putExtra("id",1);
                 startActivity(intent);
+
             }
         });
     }
