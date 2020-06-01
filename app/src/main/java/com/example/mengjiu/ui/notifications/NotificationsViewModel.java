@@ -7,8 +7,10 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 public class NotificationsViewModel extends ViewModel {
+    private Button loginbutton;
 
     private MutableLiveData<String> mText;
+
 
 
     public NotificationsViewModel() {
