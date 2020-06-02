@@ -55,8 +55,8 @@ public class SplashActivity extends AppCompatActivity {
         Animation alpha= AnimationUtils.loadAnimation(this,R.anim.alpha_animation);
         img.startAnimation(alpha);
         //开始放大缩小动画
-//        Animation anim= AnimationUtils.loadAnimation(this,R.anim.anim_small);
-//        img.startAnimation(anim);
+        Animation anim= AnimationUtils.loadAnimation(this,R.anim.anim_small);
+        img.startAnimation(anim);
     }
 }
 
