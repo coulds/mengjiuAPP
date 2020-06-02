@@ -21,4 +21,10 @@
     <string name="login_re">注册会员</string>
     <string name="login_lo">登录会员</string>
     <string name="re_keep">保密</string>
+    <string name="my_dd">我的订单</string>
+    <string name="my_jp">我的酒品</string>
+    <string name="my_kf">客服中心</string>
+    <string name="my_qb">钱包</string>
+    <string name="my_yhj">优惠券</string>
+    <string name="my_sz">设置</string>
 </resources>
