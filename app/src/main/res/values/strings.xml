@@ -2,7 +2,7 @@
     <string name="app_name">梦酒</string>
     <string name="title_home">主页</string>
     <string name="title_dashboard">账单</string>
-    <string name="title_notifications">注册</string>
+    <string name="title_notifications">会员</string>
     <string name="title_myorder">我的</string>
     <string name="title_splash">欢迎进入梦酒</string>
     <string name="banquan_splash">© 最终解释权归梦酒所有</string>
@@ -18,6 +18,7 @@
     <string name="register_woman">女</string>
     <string name="register_xingbie">性别:</string>
     <string name="register_fanhui">返回</string>
-    <string name="login_re">注册账户</string>
+    <string name="login_re">注册会员</string>
+    <string name="login_lo">登录会员</string>
     <string name="re_keep">保密</string>
 </resources>

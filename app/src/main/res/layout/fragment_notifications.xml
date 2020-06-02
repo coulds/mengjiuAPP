@@ -51,7 +51,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
         android:background="#FF9800"
-        android:text="注册账户"
+        android:text="@string/login_re"
         android:textColor="#F3EFEF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="50dp"
         android:background="#03A9F4"
-        android:text="登录账户"
+        android:text="@string/login_lo"
         android:textColor="#F3EFEF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,28 +86,23 @@
         android:id="@+id/login_radiaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="79dp"
-        android:layout_marginEnd="244dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="记住密码"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
     <TextView
         android:id="@+id/login_find_passworld"
         android:layout_width="62dp"
         android:layout_height="27dp"
-        android:layout_marginStart="97dp"
-        android:layout_marginEnd="85dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/login_find_passworld"
         android:textAlignment="textEnd"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/login_radiaButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/login_radiaButton" />
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
