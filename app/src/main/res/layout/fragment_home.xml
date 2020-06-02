@@ -6,80 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView
-        android:id="@+id/kafen"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/kafei"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/kafen_text"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kafei"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="咖啡"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kafen" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
+        <ImageView
+            android:id="@+id/kafei_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/kafei"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/kafei_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咖啡"
+            app:layout_constraintStart_toStartOf="@+id/kafei_img"
+            app:layout_constraintTop_toBottomOf="@+id/kafei_img" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/yingpin"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/yingpin"
-        app:layout_constraintStart_toEndOf="@+id/kafen"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/yingpin_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:text="饮品"
-        app:layout_constraintStart_toEndOf="@+id/kafen_text"
-        app:layout_constraintTop_toBottomOf="@+id/yingpin" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/kafei"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
+        <ImageView
+            android:id="@+id/yingpin_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/yingpin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/yingpin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="饮品"
+            app:layout_constraintEnd_toEndOf="@+id/yingpin_img"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/yingpin_img"
+            app:layout_constraintTop_toBottomOf="@+id/yingpin_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/jiudan"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/jiu1"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/yingpin"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/jiudan_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="酒单"
-        app:layout_constraintStart_toEndOf="@+id/yingpin_text"
-        app:layout_constraintTop_toBottomOf="@+id/jiudan" />
+        <ImageView
+            android:id="@+id/jiudan_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/jiu1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+        <TextView
+            android:id="@+id/jiudan_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="酒单"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jiudan_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/fuwu"
-        android:layout_width="28dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/serve"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/fuwu_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="服务"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fuwu" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/fuwu_img"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/serve"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务"
+            app:layout_constraintEnd_toEndOf="@+id/fuwu_img"
+            app:layout_constraintStart_toStartOf="@+id/fuwu_img"
+            app:layout_constraintTop_toBottomOf="@+id/fuwu_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,12 +13,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();//隐藏标题栏
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);//透明状态栏
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);//透明标题栏
-//
+        setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -40,9 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         int id = getIntent().getIntExtra("id",0);
         if (id==1){
-           getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container,new NotificationsFragment()).addToBackStack(null).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container,new NotificationsFragment()).addToBackStack(null).commit();
         }
-
 
 
 
