@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.mengjiu.ui.notifications.NotificationsFragment;
+
 public class RegisterActivity extends AppCompatActivity {
     private Button registerButton;
 
@@ -20,10 +22,10 @@ public class RegisterActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(RegisterActivity.this,MainActivity.class);
-                intent.putExtra("id",1);
+                Intent intent = new Intent(RegisterActivity.this, NotificationsFragment.class);
+               intent.putExtra("id",1);
                 startActivity(intent);
-
+                finish();
             }
         });
     }
