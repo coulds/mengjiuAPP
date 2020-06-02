@@ -8,10 +8,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout1"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:hint="@string/login_username"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -19,15 +20,18 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/registerinput1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:singleLine="true"  />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/login_passworld"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
@@ -35,16 +39,20 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/registerinput2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:singleLine="true"  />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout3"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/login_ok_passworld"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
@@ -52,68 +60,93 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/registerinput3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/login_phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout3"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/registerinput4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
         android:id="@+id/register_logo"
-        android:layout_width="147dp"
-        android:layout_height="125dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <RadioButton
-        android:id="@+id/radioButton1"
-        android:layout_width="wrap_content"
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/register_man"
-        app:layout_constraintStart_toEndOf="@+id/register_xingbie"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/register_woman"
-        app:layout_constraintStart_toEndOf="@+id/radioButton1"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+        <RadioGroup
+            android:id="@+id/register_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/register_xingbie"
-        android:layout_width="43dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/register_xingbie"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_xingbie"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/register_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/register_man"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/register_femle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/register_woman"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/register_keep"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/re_keep"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </TableRow>
 
     <Button
         android:id="@+id/register_button"
-        android:layout_width="268dp"
-        android:layout_height="51dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:background="#03A9F4"
         android:text="@string/login_register"
         android:textColor="#F8F5F5"
@@ -123,20 +156,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
         app:layout_constraintVertical_bias="0.478" />
-
-    <Button
-        android:id="@+id/register_button1"
-        android:layout_width="268dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
-        android:background="#FF9800"
-        android:text="@string/register_fanhui"
-        android:textColor="#F8F5F5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register_button"
-        app:layout_constraintVertical_bias="0.103" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
