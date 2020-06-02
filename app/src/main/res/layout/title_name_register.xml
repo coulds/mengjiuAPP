@@ -6,5 +6,5 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:text="@string/login_re"
-    android:textColor="#ffffff"
+    android:textColor="#FFFDFD"
     android:textSize="20sp"></TextView>
