@@ -23,6 +23,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/mengjiu" />
 
+
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
