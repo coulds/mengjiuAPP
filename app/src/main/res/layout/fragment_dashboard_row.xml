@@ -10,11 +10,11 @@
         android:layout_height="163dp">
 
         <RadioButton
-            android:id="@+id/radio1"
+            android:id="@+id/radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="64dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,9 +23,10 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintStart_toEndOf="@+id/radio1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radio"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492"
             app:srcCompat="@drawable/mengjiu" />
 
         <TextView
