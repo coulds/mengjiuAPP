@@ -37,7 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(getResources().getColor(R.color.colorTop));//通知栏所需颜色
+            window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));//通知栏所需颜色
 
         }
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);//隐藏状态栏
