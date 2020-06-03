@@ -21,7 +21,7 @@
     <string name="login_lo">登录会员</string>
     <string name="re_keep">保密</string>
     <string name="my_dd">我的订单</string>
-    <string name="my_jp">我的酒品</string>
+    <string name="my_jp">我的收藏</string>
     <string name="my_kf">客服中心</string>
     <string name="my_qb">钱包</string>
     <string name="my_yhj">优惠券</string>
@@ -31,7 +31,7 @@
     <string name="fragment_dashbord_tobedelivered">待配送</string>
     <string name="fragment_dashbord_tobeevaluated">待评价</string>
     <string name="fragment_dashbord_complete">完成</string>
-    <string name="fragment_dashbord_recentorders">最近订单</string>
+    <string name="fragment_dashbord_recentorders">待付款</string>
     <string name="fragment_dashbord_placeoforigin">产地：</string>
     <string name="fragment_dashbord_rmb">￥</string>
     <string name="fragment_dashbord_quantity">数量：</string>
