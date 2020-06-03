@@ -6,7 +6,6 @@
     <string name="title_myorder">我的</string>
     <string name="title_splash">欢迎进入梦酒</string>
     <string name="banquan_splash">© 最终解释权归梦酒所有</string>
-    <string name="logo"></string>
     <string name="login_username">用户名</string>
     <string name="login_passworld">密码</string>
     <string name="login_login">登录</string>
@@ -36,12 +35,10 @@
     <string name="fragment_dashbord_placeoforigin">产地：</string>
     <string name="fragment_dashbord_rmb">￥</string>
     <string name="fragment_dashbord_quantity">数量：</string>
-    <string name="fragment_dashbord_placeoforigin2">产地：</string>
     <string name="fragment_dashbord_total">总计：￥</string>
     <string name="fragment_dashbord_settlement">结算</string>
     <string name="fragment_dashbord_checkall">全选</string>
     <string name="fragment_home_coffee">咖啡</string>
-    <string name="fra" />
     <string name="fragment_home_drink">饮品</string>
     <string name="fragment_home_winelist">酒单</string>
     <string name="fragment_home_service">服务</string>
