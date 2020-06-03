@@ -27,4 +27,23 @@
     <string name="my_qb">钱包</string>
     <string name="my_yhj">优惠券</string>
     <string name="my_sz">设置</string>
+    <string name="fragment_dashbord_quanbu">全部</string>
+    <string name="fragment_dashbord_tobeplaced">待下单</string>
+    <string name="fragment_dashbord_tobedelivered">待配送</string>
+    <string name="fragment_dashbord_tobeevaluated">待评价</string>
+    <string name="fragment_dashbord_complete">完成</string>
+    <string name="fragment_dashbord_recentorders">最近订单</string>
+    <string name="fragment_dashbord_placeoforigin">产地：</string>
+    <string name="fragment_dashbord_rmb">￥</string>
+    <string name="fragment_dashbord_quantity">数量：</string>
+    <string name="fragment_dashbord_placeoforigin2">产地：</string>
+    <string name="fragment_dashbord_total">总计：￥</string>
+    <string name="fragment_dashbord_settlement">结算</string>
+    <string name="fragment_dashbord_checkall">全选</string>
+    <string name="fragment_home_coffee">咖啡</string>
+    <string name="fra" />
+    <string name="fragment_home_drink">饮品</string>
+    <string name="fragment_home_winelist">酒单</string>
+    <string name="fragment_home_service">服务</string>
+    <string name="fragment_notifications_rememberpassword">记住密码</string>
 </resources>
