@@ -186,10 +186,10 @@
                     android:id="@+id/num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="56"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="@+id/textVie"
-                    app:layout_constraintStart_toEndOf="@+id/textVie"
-                    tools:text="56" />
+                    app:layout_constraintStart_toEndOf="@+id/textVie" />
 
                 <TextView
                     android:id="@+id/textVie"
@@ -288,10 +288,10 @@
                     android:id="@+id/num2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="56"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="@+id/textVie2"
-                    app:layout_constraintStart_toEndOf="@+id/textVie2"
-                    tools:text="56" />
+                    app:layout_constraintStart_toEndOf="@+id/textVie2" />
 
                 <TextView
                     android:id="@+id/textVie2"
@@ -390,10 +390,10 @@
                     android:id="@+id/num3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="56"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="@+id/textVie3"
-                    app:layout_constraintStart_toEndOf="@+id/textVie3"
-                    tools:text="56" />
+                    app:layout_constraintStart_toEndOf="@+id/textVie3" />
 
                 <TextView
                     android:id="@+id/textVie3"
@@ -492,10 +492,10 @@
                     android:id="@+id/num4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="56"
                     android:textSize="10sp"
                     app:layout_constraintBottom_toBottomOf="@+id/textVie4"
-                    app:layout_constraintStart_toEndOf="@+id/textVie4"
-                    tools:text="56" />
+                    app:layout_constraintStart_toEndOf="@+id/textVie4" />
 
                 <TextView
                     android:id="@+id/textVie4"
