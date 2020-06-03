@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         if (id==1){
             getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container,new NotificationsFragment()).addToBackStack(null).commit();
         }
-        
 
     }
 }
