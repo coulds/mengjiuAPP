@@ -19,8 +19,6 @@
             android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:background="#E4E1E1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,35 +39,35 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="全部" />
+                android:text="@string/fragment_dashbord_quanbu" />
 
             <Button
                 android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="待下单" />
+                android:text="@string/fragment_dashbord_tobeplaced" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="待配送" />
+                android:text="@string/fragment_dashbord_tobedelivered" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="待评价" />
+                android:text="@string/fragment_dashbord_tobeevaluated" />
 
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="完成" />
+                android:text="@string/fragment_dashbord_complete" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -78,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="最近订单"
+        android:text="@string/fragment_dashbord_recentorders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
@@ -151,7 +149,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="产地："
+                    android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/commodityname"
                     app:layout_constraintTop_toBottomOf="@+id/commodityname" />
@@ -179,7 +177,7 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="￥"
+                    android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="@+id/price"
                     app:layout_constraintEnd_toStartOf="@+id/price" />
@@ -198,7 +196,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="数量："
+                    android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/production"
                     app:layout_constraintTop_toBottomOf="@+id/production" />
@@ -244,7 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="产地："
+                    android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/commodityname2"
                     app:layout_constraintTop_toBottomOf="@+id/commodityname2" />
@@ -281,7 +279,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="￥"
+                    android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="@+id/price2"
                     app:layout_constraintEnd_toStartOf="@+id/price2" />
@@ -300,7 +298,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="数量："
+                    android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/production2"
                     app:layout_constraintTop_toBottomOf="@+id/production2" />
@@ -346,7 +344,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="产地："
+                    android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/commodityname3"
                     app:layout_constraintTop_toBottomOf="@+id/commodityname3" />
@@ -383,7 +381,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="￥"
+                    android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="@+id/price3"
                     app:layout_constraintEnd_toStartOf="@+id/price3" />
@@ -402,7 +400,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="数量："
+                    android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/production3"
                     app:layout_constraintTop_toBottomOf="@+id/production3" />
@@ -448,7 +446,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="产地："
+                    android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/commodityname4"
                     app:layout_constraintTop_toBottomOf="@+id/commodityname4" />
@@ -485,7 +483,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="￥"
+                    android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="@+id/price4"
                     app:layout_constraintEnd_toStartOf="@+id/price4" />
@@ -504,7 +502,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
-                    android:text="数量："
+                    android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="@+id/production4"
                     app:layout_constraintTop_toBottomOf="@+id/production4" />
@@ -529,7 +527,7 @@
             android:id="@+id/totalprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="总计：￥"
+            android:text="@string/fragment_dashbord_total"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/totalpr"
@@ -541,7 +539,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:background="#F44336"
-            android:text="结算"
+            android:text="@string/fragment_dashbord_settlement"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -562,7 +560,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="全选"
+            android:text="@string/fragment_dashbord_checkall"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

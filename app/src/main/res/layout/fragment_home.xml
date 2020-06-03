@@ -27,7 +27,7 @@
             android:id="@+id/kafei_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="咖啡"
+            android:text="@string/fragment_home_coffee"
             app:layout_constraintStart_toStartOf="@+id/kafei_img"
             app:layout_constraintTop_toBottomOf="@+id/kafei_img" />
 
@@ -54,7 +54,7 @@
             android:id="@+id/yingpin_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="饮品"
+            android:text="@string/fragment_home_drink"
             app:layout_constraintEnd_toEndOf="@+id/yingpin_img"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/yingpin_img"
@@ -82,7 +82,7 @@
             android:id="@+id/jiudan_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="酒单"
+            android:text="@string/fragment_home_winelist"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/jiudan_img" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -108,7 +108,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="服务"
+            android:text="@string/fragment_home_service"
             app:layout_constraintEnd_toEndOf="@+id/fuwu_img"
             app:layout_constraintStart_toStartOf="@+id/fuwu_img"
             app:layout_constraintTop_toBottomOf="@+id/fuwu_img" />
