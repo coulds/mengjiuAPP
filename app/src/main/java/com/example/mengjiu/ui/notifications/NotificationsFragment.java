@@ -2,11 +2,13 @@ package com.example.mengjiu.ui.notifications;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -14,10 +16,13 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.mengjiu.R;
 import com.example.mengjiu.RegisterActivity;
+import com.google.android.material.textfield.TextInputLayout;
 
 public class NotificationsFragment extends Fragment {
     private final static String TAG="Mengjiu";
     private Button loginButton1;
+    private Button loginButton;
+    private String user;
     private NotificationsViewModel notificationsViewModel;
 
 
@@ -38,6 +43,31 @@ public class NotificationsFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+//        //实现登录APP模块
+//        loginButton=root.findViewById(R.id.notifications_login_button);
+//        loginButton.setOnClickListener(v->{
+//            TextInputLayout username=root.findViewById(R.id.notifications_registerinput1);
+//            TextInputLayout password=root.findViewById(R.id.notifications_registerinput2);
+//            user=username.getEditText().getText().toString();
+//            String p=password.getEditText().getText().toString();
+//
+//
+//            //判断
+//            if (TextUtils.isEmpty(user)){
+//                Toast.makeText(getActivity(), getResources().getString(R.string.root_fail_text), Toast.LENGTH_SHORT).show();
+//                return;
+//            }else if (TextUtils.isEmpty(p)){
+//                Toast.makeText(getActivity(), getResources().getString(R.string.root_fail_text1), Toast.LENGTH_SHORT).show();
+//                return;
+//            }else {
+//                // 调用retrofit
+//                //TODO 未实现服务器对接
+//                //lab.login(user, p, handler);
+//            }
+//        });
+
         return root;
 
     }

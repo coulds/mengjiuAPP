@@ -44,4 +44,6 @@
     <string name="fragment_home_service">服务</string>
     <string name="fragment_notifications_rememberpassword">记住密码</string>
     <string name="all_shanchu">删除</string>
+    <string name="root_fail_text">请输入用户名！</string>
+    <string name="root_fail_text1">请输入密码！</string>
 </resources>
