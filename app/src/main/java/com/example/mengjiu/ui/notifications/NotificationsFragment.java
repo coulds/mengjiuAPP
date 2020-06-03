@@ -2,6 +2,7 @@ package com.example.mengjiu.ui.notifications;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,7 @@ import com.example.mengjiu.R;
 import com.example.mengjiu.RegisterActivity;
 
 public class NotificationsFragment extends Fragment {
+    private final static String TAG="Mengjiu";
     private Button loginButton1;
     private NotificationsViewModel notificationsViewModel;
 
@@ -31,6 +33,7 @@ public class NotificationsFragment extends Fragment {
         loginButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG,"点击注册跳转注册页！");
                 Intent intent = new Intent(getActivity(),RegisterActivity.class);
                 startActivity(intent);
             }
