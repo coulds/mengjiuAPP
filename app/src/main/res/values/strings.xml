@@ -31,7 +31,7 @@
     <string name="fragment_dashbord_tobedelivered">待配送</string>
     <string name="fragment_dashbord_tobeevaluated">待评价</string>
     <string name="fragment_dashbord_complete">完成</string>
-    <string name="fragment_dashbord_recentorders">待付款</string>
+    <string name="fragment_dashbord_recentorders">最近订单</string>
     <string name="fragment_dashbord_placeoforigin">产地：</string>
     <string name="fragment_dashbord_rmb">￥</string>
     <string name="fragment_dashbord_quantity">数量：</string>
@@ -43,4 +43,5 @@
     <string name="fragment_home_winelist">酒单</string>
     <string name="fragment_home_service">服务</string>
     <string name="fragment_notifications_rememberpassword">记住密码</string>
+    <string name="all_shanchu">删除</string>
 </resources>
