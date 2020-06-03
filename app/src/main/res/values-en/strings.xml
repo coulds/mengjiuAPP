@@ -43,4 +43,5 @@
     <string name="fragment_home_winelist">list</string>
     <string name="fragment_home_service">service</string>
     <string name="fragment_notifications_rememberpassword">remember</string>
+    <string name="all_shanchu">删除</string>
 </resources>

@@ -39,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFDFD"
                 android:text="@string/fragment_dashbord_quanbu" />
 
             <Button
@@ -53,6 +54,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFDFD"
                 android:text="@string/fragment_dashbord_tobedelivered" />
 
             <Button
@@ -60,6 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFDFD"
                 android:text="@string/fragment_dashbord_tobeevaluated" />
 
             <Button
@@ -67,6 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFDFD"
                 android:text="@string/fragment_dashbord_complete" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
