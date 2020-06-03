@@ -29,7 +29,7 @@ public class NotificationsFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_notifications, container, false);
 
         //实现从登陆界面到注册页面的跳转
-        loginButton1 = root.findViewById(R.id.login_button1);
+        loginButton1 = root.findViewById(R.id.notifications_login_button1);
         loginButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

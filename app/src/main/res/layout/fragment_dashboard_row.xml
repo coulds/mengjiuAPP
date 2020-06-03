@@ -10,7 +10,7 @@
         android:layout_height="163dp">
 
         <RadioButton
-            android:id="@+id/radio"
+            android:id="@+id/dashboard_row_radio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -19,57 +19,57 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/cover"
+            android:id="@+id/dashboard_row_cover"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/radio"
+            app:layout_constraintStart_toEndOf="@+id/dashboard_row_radio"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.492"
             app:srcCompat="@drawable/mengjiu" />
 
         <TextView
-            android:id="@+id/commodityname"
+            android:id="@+id/dashboard_row_commodityname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
             android:text="雪花啤酒"
             android:textSize="20dp"
-            app:layout_constraintStart_toEndOf="@+id/cover"
-            app:layout_constraintTop_toTopOf="@+id/cover" />
+            app:layout_constraintStart_toEndOf="@+id/dashboard_row_cover"
+            app:layout_constraintTop_toTopOf="@+id/dashboard_row_cover" />
 
         <TextView
-            android:id="@+id/production"
+            android:id="@+id/dashboard_row_production"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="产地：四川"
-            app:layout_constraintEnd_toEndOf="@+id/commodityname"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_row_commodityname"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/commodityname"
-            app:layout_constraintTop_toBottomOf="@+id/commodityname" />
+            app:layout_constraintStart_toStartOf="@+id/dashboard_row_commodityname"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_row_commodityname" />
 
         <TextView
-            android:id="@+id/price"
+            android:id="@+id/dashboard_row_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="￥100"
-            app:layout_constraintBottom_toBottomOf="@+id/category"
+            app:layout_constraintBottom_toBottomOf="@+id/dashboard_row_category"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/category" />
+            app:layout_constraintTop_toTopOf="@+id/dashboard_row_category" />
 
         <TextView
-            android:id="@+id/category"
+            android:id="@+id/dashboard_row_category"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="啤酒类"
-            app:layout_constraintEnd_toEndOf="@+id/production"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_row_production"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/production"
-            app:layout_constraintTop_toBottomOf="@+id/production" />
+            app:layout_constraintStart_toStartOf="@+id/dashboard_row_production"
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_row_production" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

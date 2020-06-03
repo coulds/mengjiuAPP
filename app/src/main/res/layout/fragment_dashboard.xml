@@ -7,7 +7,7 @@
     tools:context=".ui.dashboard.DashboardFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout7"
+        android:id="@+id/dashboard_constraintLayout7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <SearchView
-            android:id="@+id/searchView"
+            android:id="@+id/dashboard_searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E4E1E1"
@@ -32,38 +32,38 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView">
+            app:layout_constraintTop_toBottomOf="@+id/dashboard_searchView">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/dashboard_button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fragment_dashbord_quanbu" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/dashboard_button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fragment_dashbord_tobeplaced" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/dashboard_button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fragment_dashbord_tobedelivered" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/dashboard_button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fragment_dashbord_tobeevaluated" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/dashboard_button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -72,37 +72,37 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/dashboard_textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/fragment_dashbord_recentorders"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_constraintLayout7" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/dashboard_scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintBottom_toTopOf="@+id/dashboard_constraintLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14">
+        app:layout_constraintTop_toBottomOf="@+id/dashboard_textView14">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout5"
+            android:id="@+id/dashboard_constraintLayout5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout"
+                android:id="@+id/dashboard_constraintLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -114,7 +114,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <CheckBox
-                    android:id="@+id/radio"
+                    android:id="@+id/dashboard_radio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -123,7 +123,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/haerbin"
+                    android:id="@+id/dashboard_haerbin"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -131,31 +131,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_radio"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/commodityname"
+                    android:id="@+id/dashboard_commodityname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/haerbin"
-                    app:layout_constraintTop_toTopOf="@+id/haerbin" />
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_haerbin"
+                    app:layout_constraintTop_toTopOf="@+id/dashboard_haerbin" />
 
                 <TextView
-                    android:id="@+id/production"
+                    android:id="@+id/dashboard_production"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/commodityname"
-                    app:layout_constraintTop_toBottomOf="@+id/commodityname" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_commodityname"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_commodityname" />
 
                 <TextView
-                    android:id="@+id/price"
+                    android:id="@+id/dashboard_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -165,45 +165,45 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/product"
+                    android:id="@+id/dashboard_product"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/production"
-                    app:layout_constraintStart_toEndOf="@+id/production" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_production"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_production" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/dashboard_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/price"
-                    app:layout_constraintEnd_toStartOf="@+id/price" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_price"
+                    app:layout_constraintEnd_toStartOf="@+id/dashboard_price" />
 
                 <TextView
-                    android:id="@+id/num"
+                    android:id="@+id/dashboard_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textVie"
-                    app:layout_constraintStart_toEndOf="@+id/textVie" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_textVie"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_textVie" />
 
                 <TextView
-                    android:id="@+id/textVie"
+                    android:id="@+id/dashboard_textVie"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/production"
-                    app:layout_constraintTop_toBottomOf="@+id/production" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_production"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_production" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout2"
+                android:id="@+id/dashboard_constraintLayout2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -213,10 +213,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+                app:layout_constraintTop_toBottomOf="@+id/dashboard_constraintLayout">
 
                 <ImageView
-                    android:id="@+id/haerbin2"
+                    android:id="@+id/dashboard_haerbin2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -224,31 +224,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio2"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_radio2"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/commodityname2"
+                    android:id="@+id/dashboard_commodityname2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/haerbin2"
-                    app:layout_constraintTop_toTopOf="@+id/haerbin2" />
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_haerbin2"
+                    app:layout_constraintTop_toTopOf="@+id/dashboard_haerbin2" />
 
                 <TextView
-                    android:id="@+id/production2"
+                    android:id="@+id/dashboard_production2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/commodityname2"
-                    app:layout_constraintTop_toBottomOf="@+id/commodityname2" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_commodityname2"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_commodityname2" />
 
                 <TextView
-                    android:id="@+id/price2"
+                    android:id="@+id/dashboard_price2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -258,7 +258,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/radio2"
+                    android:id="@+id/dashboard_radio2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -267,45 +267,45 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/product2"
+                    android:id="@+id/dashboard_product2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/production2"
-                    app:layout_constraintStart_toEndOf="@+id/production2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_production2"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_production2" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/dashboard_textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/price2"
-                    app:layout_constraintEnd_toStartOf="@+id/price2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_price2"
+                    app:layout_constraintEnd_toStartOf="@+id/dashboard_price2" />
 
                 <TextView
-                    android:id="@+id/num2"
+                    android:id="@+id/dashboard_num2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textVie2"
-                    app:layout_constraintStart_toEndOf="@+id/textVie2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_textVie2"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_textVie2" />
 
                 <TextView
-                    android:id="@+id/textVie2"
+                    android:id="@+id/dashboard_textVie2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/production2"
-                    app:layout_constraintTop_toBottomOf="@+id/production2" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_production2"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_production2" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout3"
+                android:id="@+id/dashboard_constraintLayout3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -315,10 +315,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+                app:layout_constraintTop_toBottomOf="@+id/dashboard_constraintLayout2">
 
                 <ImageView
-                    android:id="@+id/haerbin3"
+                    android:id="@+id/dashboard_haerbin3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -326,31 +326,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio3"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_radio3"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/commodityname3"
+                    android:id="@+id/dashboard_commodityname3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/haerbin3"
-                    app:layout_constraintTop_toTopOf="@+id/haerbin3" />
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_haerbin3"
+                    app:layout_constraintTop_toTopOf="@+id/dashboard_haerbin3" />
 
                 <TextView
-                    android:id="@+id/production3"
+                    android:id="@+id/dashboard_production3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/commodityname3"
-                    app:layout_constraintTop_toBottomOf="@+id/commodityname3" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_commodityname3"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_commodityname3" />
 
                 <TextView
-                    android:id="@+id/price3"
+                    android:id="@+id/dashboard_price3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -360,7 +360,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/radio3"
+                    android:id="@+id/dashboard_radio3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -369,45 +369,45 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/product3"
+                    android:id="@+id/dashboard_product3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/production3"
-                    app:layout_constraintStart_toEndOf="@+id/production3" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_production3"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_production3" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/dashboard_textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/price3"
-                    app:layout_constraintEnd_toStartOf="@+id/price3" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_price3"
+                    app:layout_constraintEnd_toStartOf="@+id/dashboard_price3" />
 
                 <TextView
-                    android:id="@+id/num3"
+                    android:id="@+id/dashboard_num3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textVie3"
-                    app:layout_constraintStart_toEndOf="@+id/textVie3" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_textVie3"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_textVie3" />
 
                 <TextView
-                    android:id="@+id/textVie3"
+                    android:id="@+id/dashboard_textVie3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/production3"
-                    app:layout_constraintTop_toBottomOf="@+id/production3" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_production3"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_production3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout4"
+                android:id="@+id/dashboard_constraintLayout4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -417,10 +417,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+                app:layout_constraintTop_toBottomOf="@+id/dashboard_constraintLayout3">
 
                 <ImageView
-                    android:id="@+id/haerbin4"
+                    android:id="@+id/dashboard_haerbin4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -428,31 +428,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/radio4"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_radio4"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/commodityname4"
+                    android:id="@+id/dashboard_commodityname4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/haerbin4"
-                    app:layout_constraintTop_toTopOf="@+id/haerbin4" />
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_haerbin4"
+                    app:layout_constraintTop_toTopOf="@+id/dashboard_haerbin4" />
 
                 <TextView
-                    android:id="@+id/production4"
+                    android:id="@+id/dashboard_production4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/commodityname4"
-                    app:layout_constraintTop_toBottomOf="@+id/commodityname4" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_commodityname4"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_commodityname4" />
 
                 <TextView
-                    android:id="@+id/price4"
+                    android:id="@+id/dashboard_price4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -462,7 +462,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/radio4"
+                    android:id="@+id/dashboard_radio4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -471,41 +471,41 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/product4"
+                    android:id="@+id/dashboard_product4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/production4"
-                    app:layout_constraintStart_toEndOf="@+id/production4" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_production4"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_production4" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/dashboard_textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/price4"
-                    app:layout_constraintEnd_toStartOf="@+id/price4" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_price4"
+                    app:layout_constraintEnd_toStartOf="@+id/dashboard_price4" />
 
                 <TextView
-                    android:id="@+id/num4"
+                    android:id="@+id/dashboard_num4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textVie4"
-                    app:layout_constraintStart_toEndOf="@+id/textVie4" />
+                    app:layout_constraintBottom_toBottomOf="@+id/dashboard_textVie4"
+                    app:layout_constraintStart_toEndOf="@+id/dashboard_textVie4" />
 
                 <TextView
-                    android:id="@+id/textVie4"
+                    android:id="@+id/dashboard_textVie4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/production4"
-                    app:layout_constraintTop_toBottomOf="@+id/production4" />
+                    app:layout_constraintStart_toStartOf="@+id/dashboard_production4"
+                    app:layout_constraintTop_toBottomOf="@+id/dashboard_production4" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -513,7 +513,7 @@
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout8"
+        android:id="@+id/dashboard_constraintLayout8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -524,17 +524,17 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/totalprice"
+            android:id="@+id/dashboard_totalprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_dashbord_total"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/totalpr"
+            app:layout_constraintEnd_toStartOf="@+id/dashboard_totalpr"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/dashboard_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -545,18 +545,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/totalpr"
+            android:id="@+id/dashboard_totalpr"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="0.00"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button"
+            app:layout_constraintEnd_toStartOf="@+id/dashboard_button"
             app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/dashboard_checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"

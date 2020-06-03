@@ -7,7 +7,7 @@
     tools:context=".ui.home.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/kafei"
+        android:id="@+id/home_kafei"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/kafei_img"
+            android:id="@+id/home_kafei_img"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/kafei"
@@ -24,26 +24,26 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/kafei_text"
+            android:id="@+id/home_kafei_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_home_coffee"
-            app:layout_constraintStart_toStartOf="@+id/kafei_img"
-            app:layout_constraintTop_toBottomOf="@+id/kafei_img" />
+            app:layout_constraintStart_toStartOf="@+id/home_kafei_img"
+            app:layout_constraintTop_toBottomOf="@+id/home_kafei_img" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/yingpin"
+        android:id="@+id/home_yingpin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/kafei"
+        app:layout_constraintStart_toEndOf="@+id/home_kafei"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/yingpin_img"
+            android:id="@+id/home_yingpin_img"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/yingpin"
@@ -51,27 +51,27 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/yingpin_text"
+            android:id="@+id/home_yingpin_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_home_drink"
-            app:layout_constraintEnd_toEndOf="@+id/yingpin_img"
+            app:layout_constraintEnd_toEndOf="@+id/home_yingpin_img"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/yingpin_img"
-            app:layout_constraintTop_toBottomOf="@+id/yingpin_img" />
+            app:layout_constraintStart_toStartOf="@+id/home_yingpin_img"
+            app:layout_constraintTop_toBottomOf="@+id/home_yingpin_img" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/jiudan"
+        android:id="@+id/home_jiudan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintStart_toEndOf="@+id/yingpin"
+        app:layout_constraintStart_toEndOf="@+id/home_yingpin"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/jiudan_img"
+            android:id="@+id/home_jiudan_img"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/jiu1"
@@ -79,16 +79,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/jiudan_text"
+            android:id="@+id/home_jiudan_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_home_winelist"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/jiudan_img" />
+            app:layout_constraintTop_toBottomOf="@+id/home_jiudan_img" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fuwu"
+        android:id="@+id/home_fuwu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -97,7 +97,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/fuwu_img"
+            android:id="@+id/home_fuwu_img"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/serve"
@@ -105,17 +105,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/home_textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fragment_home_service"
-            app:layout_constraintEnd_toEndOf="@+id/fuwu_img"
-            app:layout_constraintStart_toStartOf="@+id/fuwu_img"
-            app:layout_constraintTop_toBottomOf="@+id/fuwu_img" />
+            app:layout_constraintEnd_toEndOf="@+id/home_fuwu_img"
+            app:layout_constraintStart_toStartOf="@+id/home_fuwu_img"
+            app:layout_constraintTop_toBottomOf="@+id/home_fuwu_img" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout6"
+        android:id="@+id/home_constraintLayout6"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -125,7 +125,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jiudan">
+        app:layout_constraintTop_toBottomOf="@+id/home_jiudan">
 
         <ScrollView
             android:layout_width="0dp"
@@ -141,55 +141,55 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button16"
+                    android:id="@+id/home_button16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/button15"
+                    android:id="@+id/home_button15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/button14"
+                    android:id="@+id/home_button14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/home_button13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/home_button12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/home_imageView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/guangkaolan" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/home_textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/home_button11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/home_button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Button" />

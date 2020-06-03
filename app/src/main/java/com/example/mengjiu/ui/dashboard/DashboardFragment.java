@@ -35,7 +35,7 @@ public class DashboardFragment extends Fragment {
 //            }
 //        });
         //实现从账单界面到全部订单页面的跳转
-        button4Button = root.findViewById(R.id.button4);
+        button4Button = root.findViewById(R.id.dashboard_button4);
         button4Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -7,7 +7,7 @@
     tools:context=".ui.notifications.NotificationsFragment">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout1"
+        android:id="@+id/notifications_textInputLayout1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -15,10 +15,10 @@
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo">
+        app:layout_constraintTop_toBottomOf="@+id/notifications_logo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerinput1"
+            android:id="@+id/notifications_registerinput1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:imeOptions="actionNext"
@@ -26,7 +26,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/notifications_textInputLayout2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -34,10 +34,10 @@
         app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
+        app:layout_constraintTop_toBottomOf="@+id/notifications_textInputLayout1">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/registerinput2"
+        android:id="@+id/notifications_registerinput2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:imeOptions="actionDone"
@@ -46,7 +46,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/login_button1"
+        android:id="@+id/notifications_login_button1"
         android:layout_width="248dp"
         android:layout_height="43dp"
         android:layout_marginTop="16dp"
@@ -56,10 +56,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+        app:layout_constraintTop_toBottomOf="@+id/notifications_login_button" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/notifications_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/notifications_login_button"
         android:layout_width="248dp"
         android:layout_height="43dp"
         android:layout_marginTop="50dp"
@@ -80,10 +80,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_radiaButton" />
+        app:layout_constraintTop_toBottomOf="@+id/notifications_login_radiaButton" />
 
     <TextView
-        android:id="@+id/login_find_passworld"
+        android:id="@+id/notifications_login_find_passworld"
         android:layout_width="62dp"
         android:layout_height="27dp"
         android:layout_marginEnd="16dp"
@@ -91,18 +91,18 @@
         android:textAlignment="textEnd"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/login_radiaButton"
-        app:layout_constraintEnd_toEndOf="@+id/textInputLayout2" />
+        app:layout_constraintBottom_toBottomOf="@+id/notifications_login_radiaButton"
+        app:layout_constraintEnd_toEndOf="@+id/notifications_textInputLayout2" />
 
     <CheckBox
-        android:id="@+id/login_radiaButton"
+        android:id="@+id/notifications_login_radiaButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="@string/fragment_notifications_rememberpassword"
-        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+        app:layout_constraintStart_toStartOf="@+id/notifications_textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/notifications_textInputLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
