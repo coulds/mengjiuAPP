@@ -1,17 +1,23 @@
 package com.example.mengjiu;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.text.Editable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,7 +25,37 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class RegisterActivity extends AppCompatActivity {
+    private final static String TAG="Mengjiu";
+    private ImageView useravatar;
     private Button registerButton;
+    private UserLab lab =UserLab.getInstance();
+    private Handler handler=new Handler(){
+        @Override
+        public void handleMessage(@NonNull Message msg){
+            if (null!=msg){
+                switch (msg.what){
+                    case UserLab.USER_REGISTER_SUCCESS:
+                        ReqisterSucess();
+                        break;
+                    case UserLab.USER_REGISTER_NET_ERROR:
+                        ReqisterFailed();
+                        break;
+                }
+            }
+        }
+    };
+
+    private void ReqisterSucess(){
+        Toast.makeText(RegisterActivity.this,"注册成功！",Toast.LENGTH_LONG).show();
+        //跳转登录界面
+        //TODO 跳转失败
+//        Intent intent=new Intent(RegisterActivity.this,LoginActivity.class);
+//        startActivity(intent);
+    }
+
+    private void ReqisterFailed(){
+        Toast.makeText(RegisterActivity.this,"服务器错误，请稍后再试！",Toast.LENGTH_LONG).show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +115,12 @@ public class RegisterActivity extends AppCompatActivity {
         String errorMessage;
 
         //头像
+        //TODO 暂时不能设置用户头像
+        useravatar=findViewById(R.id.register_logo);
+        useravatar.setOnClickListener(v->{
+            Log.e(TAG,"不能设置头像！头像上传通道未开发");
+            Toast.makeText(RegisterActivity.this,"暂时未开发头像上传通道！",Toast.LENGTH_LONG).show();
+        });
 
         //用户名
         TextInputLayout usernameInput =findViewById(R.id.register_textInputLayout1);
@@ -156,8 +198,7 @@ public class RegisterActivity extends AppCompatActivity {
             return;
         }else {
             //上传服务器
-            //TODO 未适配服务器
-            //lab.register(u, handler);
+            lab.register(u, handler);
         }
     }
 
