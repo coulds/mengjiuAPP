@@ -7,6 +7,7 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,12 +19,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mengjiu.Commodity;
 import com.example.mengjiu.CommodityLab;
 import com.example.mengjiu.CommodityRvAdapter;
+import com.example.mengjiu.InfoActivity;
 import com.example.mengjiu.R;
 import com.example.mengjiu.RetrofitClient;
 
 import retrofit2.Retrofit;
 
 public class HomeFragment<CommodiyRvAdapter> extends Fragment {
+    private ImageView home_kafei_img;
     private RecyclerView commodityRv;
     private CommodiyRvAdapter rvAdapter;
     private RecyclerView commodity;
@@ -53,6 +56,16 @@ public class HomeFragment<CommodiyRvAdapter> extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
+        home_kafei_img = root.findViewById(R.id.home_kafei_img);
+        home_kafei_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), InfoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         this.commodityRv=root.findViewById(R.id.commodity_recy);
         //lambda简化
