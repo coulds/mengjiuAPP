@@ -3,13 +3,13 @@ package com.example.mengjiu;
 import java.util.Date;
 
 /**
- * 频道的评论对象
+ * 商品的订单对象
  */
 public class Comment {
-    private String author;
-    private String content;
-    private Date dt;
-    private int star;
+    private String author; //下单人
+    private String content; //配送地址
+    private Date dt; //下单时间
+    private int star;  //下单数量
 
     @Override
     public String toString() {

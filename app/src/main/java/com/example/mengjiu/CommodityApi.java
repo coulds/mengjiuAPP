@@ -10,24 +10,24 @@ import retrofit2.http.Path;
 
 public interface CommodityApi {
         /**
-         * 获取收有频道
+         * 获取收有商品
          * @return
          */
         @GET("/commodity")
         Call<Result<List<Commodity>>> getAllCommoditys();
 
         /**
-         * 获取热门评论
-         * @param commodityId 频道编号
-         * @return 热门评论的列表
+         * 获取热门订单
+         * @param commodityId 商品变好
+         * @return 热门订单的列表
          */
         @GET("/commodity/{commodityId}/hotcomments")
         Call<Result<List<Comment>>>getHotComments(@Path("commodityId") String commodityId);
 
         /**
          * 新增评论
-         * @param CommodityId 频道编号
-         * @param comment 评论对象
+         * @param commodityId 商品编号
+         * @param comment 订单对象
          * @return 频道对象
          */
         @POST("/commodity/{commodityId}/comment")

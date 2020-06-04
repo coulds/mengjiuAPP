@@ -66,10 +66,10 @@ public class CommodityRvAdapter extends RecyclerView.Adapter< CommodityRvAdapter
      * 单行布局对应的java控制类
      */
     public class CommodityRowHolder extends RecyclerView.ViewHolder{
-        private TextView commodityname; //频道标题 实例对象
-        private TextView describe;//清晰度
-        private ImageView cover;
-        private TextView price;//关注度
+        private TextView commodityname; //商品标题 实例对象
+        private TextView describe;//描述
+        private ImageView cover; //图片
+        private TextView price;//价格
 
         public CommodityRowHolder(@NonNull View row) {
             super(row);
@@ -79,14 +79,14 @@ public class CommodityRvAdapter extends RecyclerView.Adapter< CommodityRvAdapter
             this.price=row.findViewById(R.id.product_price9);
             row.setOnClickListener((v)->{
                 int position= getLayoutPosition();
-                Log.d("DianDian", position+"行被点击啦！");
+                Log.d("Mengjiu", position+"行被点击啦！");
                     listener.onCommodityClick(position);
             });
         }
 
         /**
-         * 自定义方法，用于向内部的title提供数据
-         * @param // title
+         * 自定义方法，用于向内部的 commodityname提供数据
+         * @param //  commodityname
          */
         public void bind(Commodity c){
             this.commodityname.setText(c.getCommodityname());
@@ -94,7 +94,7 @@ public class CommodityRvAdapter extends RecyclerView.Adapter< CommodityRvAdapter
             this.price.setText(c.getPrice()+"");
             //从网络获取图片
             //this.cover.setImageResource(c.getCover());
-            Log.d("Diandian","频道"+c.getCommodityname()+"准备从网络加载图片"+c.getCover());
+            Log.d("Mengjiu","商品"+c.getCommodityname()+"准备从网络加载图片"+c.getCover());
             Glide.with(context)
                     .load(c.getCover())
                     .into(this.cover);

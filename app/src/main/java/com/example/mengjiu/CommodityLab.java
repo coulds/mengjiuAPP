@@ -14,7 +14,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 /**
- * 频道数据源
+ * 商品数据源
  * 使用了单例模式保证此类仅有一个对象
  */
 public class CommodityLab {
@@ -45,18 +45,6 @@ public class CommodityLab {
         return INSTANCE;
     }
     /**
-     * 生成测试数据
-     */
-//    public void test() {
-//        data = new ArrayList<>();
-//        Channel c = new Channel();
-//        c.setTitle("CCTV-1 综合");
-//        c.setQuality("4k 超高清");
-//        c.setCover(R.drawable.a1);
-//        c.setUrl("http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8");
-//        data.add(c);
-//    }
-    /**
      * 返回数据总数量
      * @return
      */
@@ -65,9 +53,9 @@ public class CommodityLab {
     }
 
     /**
-     * 返回指定位置的频道信息
+     * 返回指定位置的商品信息
      * @param position 数据编号，从0开始
-     * @return position 对应的频道数量
+     * @return position 对应的商品数量
      */
     public Commodity getCommodity(int position){
         return this.data.get(position);
@@ -83,7 +71,7 @@ public class CommodityLab {
 
         CommodityApi api = retrofit.create(CommodityApi.class);
         Call<Result<List<Commodity>>> call=api.getAllCommoditys();
-        //enqueue会自己生成子线程，去执行后溪代码
+        //enqueue会自己生成子线程，去执行后续代码
         call.enqueue(new Callback<Result<List<Commodity>>>() {
             @Override
             public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
@@ -128,7 +116,7 @@ public class CommodityLab {
                     msg.what = MSG_FAILURE;
                     handler.sendMessage(msg);
                 }else if(null!=response&&null!=response.body()){
-                    Log.d(TAG, "从阿里云得到评论数据是：");
+                    Log.d(TAG, "从阿里云得到订单数据是：");
                     Log.d(TAG, response.body().toString());
                     Result<List<Comment>> result=response.body();
                     List<Comment> comments =result.getData();
@@ -138,7 +126,7 @@ public class CommodityLab {
                     msg.obj=comments;
                     handler.sendMessage(msg);
                 } else {
-                    Log.w(TAG, "responew没有评论数据!");
+                    Log.w(TAG, "responew没有订单数据!");
                 }
             }
             @Override
@@ -149,9 +137,9 @@ public class CommodityLab {
     }
 
     /**
-     * 添加新评论
-     * @param channelId 频道编号
-     * @param comment 评论对象
+     * 添加新订单
+     * @param channelId 商品编号
+     * @param comment 订单对象
      * @param handler 主线程需要提供一个通讯录hansler
      */
     public void addComment(String channelId,Comment comment,Handler handler){
@@ -161,7 +149,7 @@ public class CommodityLab {
         call.enqueue(new Callback<Commodity>() {
             @Override
             public void onResponse(Call<Commodity> call, Response<Commodity> response) {
-                Log.d(TAG,"新增评论后服务器返回数据：");
+                Log.d(TAG,"新增订单后服务器返回数据：");
                 Log.d(TAG,response.body().toString());
                 Message msg=new Message();
                 msg.what=MSG_ADD_COMMENT;
