@@ -7,54 +7,76 @@
     android:layout_margin="8dp"
     android:clickable="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/commodity_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:text="XXXX"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/chacommodity_cover"
-            app:layout_constraintTop_toTopOf="@+id/chacommodity_cover" />
+            <TextView
+                android:id="@+id/product_title9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="奶白香咖啡"
+                android:textColor="#0B0000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/product_img9"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/commodity_ziliao"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="xxxxxxxx"
-            android:textColor="#A7B3A6"
-            android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@+id/commodity_title"
-            app:layout_constraintTop_toBottomOf="@+id/commodity_title" />
+            <ImageView
+                android:id="@+id/product_img9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/kafen1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/chacommodity_cover"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_notifications_black_24dp" />
+            <TextView
+                android:id="@+id/product_number9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="001"
+                app:layout_constraintStart_toEndOf="@+id/product_img9"
+                app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
 
-        <TextView
-            android:id="@+id/commodity_jiaqian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:text="45元"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/product_desribe9"
+                android:layout_width="201dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="产地于澳大利亚精挑细选可可，保证好质量"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/product_img9"
+                app:layout_constraintTop_toBottomOf="@+id/product_title9" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:id="@+id/product_price9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="￥25"
+                android:textColor="#F44336"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/product_score9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="评分:9.6"
+                android:textColor="#F44336"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/product_number9"
+                app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>

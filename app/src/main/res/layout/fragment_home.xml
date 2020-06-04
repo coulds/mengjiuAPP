@@ -118,707 +118,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/home_constraintLayout6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
-        app:layout_constraintVertical_bias="0.096">
-
-        <ScrollView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:layout_editor_absoluteX="1dp"
-                tools:visibility="visible">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#EAE8E8">
-
-                    <TextView
-                        android:id="@+id/product_title1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img1"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img1"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img1"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
-
-                    <TextView
-                        android:id="@+id/product_desribe1"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img1"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
-
-                    <TextView
-                        android:id="@+id/product_price1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number1"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#F4EEEE">
-
-                    <TextView
-                        android:id="@+id/product_title2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img2"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img2"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img2"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe2" />
-
-                    <TextView
-                        android:id="@+id/product_desribe2"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img2"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title2" />
-
-                    <TextView
-                        android:id="@+id/product_price2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number2"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe2" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#EAE8E8">
-
-                    <TextView
-                        android:id="@+id/product_title3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img3"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img3"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img3"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe3" />
-
-                    <TextView
-                        android:id="@+id/product_desribe3"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img3"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title3" />
-
-                    <TextView
-                        android:id="@+id/product_price3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number3"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe3" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#F4EEEE">
-
-                    <TextView
-                        android:id="@+id/product_title4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img4"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img4"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img4"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe4" />
-
-                    <TextView
-                        android:id="@+id/product_desribe4"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img4"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title4" />
-
-                    <TextView
-                        android:id="@+id/product_price4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number4"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe4" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#EAE8E8">
-
-                    <TextView
-                        android:id="@+id/product_title5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img5"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img5"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img5"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe5" />
-
-                    <TextView
-                        android:id="@+id/product_desribe5"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img5"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title5" />
-
-                    <TextView
-                        android:id="@+id/product_price5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number5"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe5" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#F4EEEE">
-
-                    <TextView
-                        android:id="@+id/product_title6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img6"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img6"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img6"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe6" />
-
-                    <TextView
-                        android:id="@+id/product_desribe6"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img6"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title6" />
-
-                    <TextView
-                        android:id="@+id/product_price6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number6"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe6" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#EAE8E8">
-
-                    <TextView
-                        android:id="@+id/product_title7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img7"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img7"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img7"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe7" />
-
-                    <TextView
-                        android:id="@+id/product_desribe7"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img7"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title7" />
-
-                    <TextView
-                        android:id="@+id/product_price7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number7"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe7" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#F4EEEE">
-
-                    <TextView
-                        android:id="@+id/product_title8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img8"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img8"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img8"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe8" />
-
-                    <TextView
-                        android:id="@+id/product_desribe8"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img8"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title8" />
-
-                    <TextView
-                        android:id="@+id/product_price8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number8"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe8" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="#EAE8E8">
-
-                    <TextView
-                        android:id="@+id/product_title9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡"
-                        android:textColor="#0B0000"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img9"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/product_img9"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/kafen1"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_number9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="001"
-                        app:layout_constraintStart_toEndOf="@+id/product_img9"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
-
-                    <TextView
-                        android:id="@+id/product_desribe9"
-                        android:layout_width="201dp"
-                        android:layout_height="43dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
-                        android:textSize="14sp"
-                        app:layout_constraintStart_toEndOf="@+id/product_img9"
-                        app:layout_constraintTop_toBottomOf="@+id/product_title9" />
-
-                    <TextView
-                        android:id="@+id/product_price9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="8dp"
-                        android:text="￥25"
-                        android:textColor="#F44336"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/product_score9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:text="评分:9.6"
-                        android:textColor="#F44336"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toEndOf="@+id/product_number9"
-                        app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
-
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </LinearLayout>
-        </ScrollView>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -835,6 +134,717 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/site_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/home_constraintLayout6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+        app:layout_constraintVertical_bias="0.096">
+
+        <!--        <ScrollView-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:orientation="vertical"-->
+        <!--                tools:layout_editor_absoluteX="1dp"-->
+        <!--                tools:visibility="visible">-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#EAE8E8">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title1"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img1"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img1"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number1"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img1"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe1"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img1"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price1"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score1"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number1"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#F4EEEE">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title2"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img2"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img2"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number2"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img2"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe2" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe2"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img2"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title2" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price2"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score2"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number2"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe2" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#EAE8E8">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title3"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img3"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img3"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number3"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img3"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe3" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe3"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img3"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title3" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price3"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score3"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number3"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe3" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#F4EEEE">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title4"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img4"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img4"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number4"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img4"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe4" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe4"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img4"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title4" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price4"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score4"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number4"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe4" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#EAE8E8">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title5"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img5"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img5"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number5"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img5"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe5" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe5"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img5"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title5" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price5"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score5"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number5"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe5" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#F4EEEE">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title6"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img6"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img6"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number6"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img6"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe6" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe6"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img6"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title6" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price6"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score6"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number6"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe6" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#EAE8E8">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title7"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img7"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img7"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number7"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img7"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe7" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe7"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img7"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title7" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price7"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score7"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number7"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe7" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#F4EEEE">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title8"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img8"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img8"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number8"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img8"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe8" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe8"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img8"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title8" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price8"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score8"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number8"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe8" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:background="#EAE8E8">-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_title9"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="奶白香咖啡"-->
+        <!--                        android:textColor="#0B0000"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img9"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <ImageView-->
+        <!--                        android:id="@+id/product_img9"-->
+        <!--                        android:layout_width="70dp"-->
+        <!--                        android:layout_height="70dp"-->
+        <!--                        android:layout_marginStart="4dp"-->
+        <!--                        android:src="@drawable/kafen1"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintStart_toStartOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_number9"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="001"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img9"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_desribe9"-->
+        <!--                        android:layout_width="201dp"-->
+        <!--                        android:layout_height="43dp"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:layout_marginTop="8dp"-->
+        <!--                        android:text="产地于澳大利亚精挑细选可可，保证好质量"-->
+        <!--                        android:textSize="14sp"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_img9"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_title9" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_price9"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginEnd="8dp"-->
+        <!--                        android:text="￥25"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textSize="18sp"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--                    <TextView-->
+        <!--                        android:id="@+id/product_score9"-->
+        <!--                        android:layout_width="wrap_content"-->
+        <!--                        android:layout_height="wrap_content"-->
+        <!--                        android:layout_marginStart="8dp"-->
+        <!--                        android:text="评分:9.6"-->
+        <!--                        android:textColor="#F44336"-->
+        <!--                        android:textStyle="bold"-->
+        <!--                        app:layout_constraintStart_toEndOf="@+id/product_number9"-->
+        <!--                        app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />-->
+
+
+        <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+        <!--            </LinearLayout>-->
+        <!--        </ScrollView>-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commodity_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
