@@ -38,6 +38,7 @@ public class HomeFragment<CommodiyRvAdapter> extends Fragment {
         //按快捷键ctrl o
         @Override
         public void handleMessage(@NonNull Message msg) {
+
             switch (msg.what){
                 case CommodityLab.MSG_CHANNELS:
 //                    rvAdapter.notifyDataSetChanged();
