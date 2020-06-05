@@ -38,46 +38,6 @@ public class MyorderFragment extends Fragment {
 //                startActivity(intent);
 //            }
 //        });
-        my_xyy_dd = root.findViewById(R.id.my_xyy_dd);
-        my_xyy_dd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Myorderwddd.class);
-                startActivity(intent);
-            }
-        });
-        my_xyy_jp = root.findViewById(R.id.my_xyy_jp);
-        my_xyy_jp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),My_collection.class);
-                startActivity(intent);
-            }
-        });
-        my_xyy_kf = root.findViewById(R.id.my_xyy_kf);
-        my_xyy_kf.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Myordercoupon.class);
-                startActivity(intent);
-            }
-        });
-        my_xyy_qb = root.findViewById(R.id.my_xyy_qb);
-        my_xyy_qb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Myorderwallet.class);
-                startActivity(intent);
-            }
-        });
-        my_xyy_yhq = root.findViewById(R.id.my_xyy_yhq);
-        my_xyy_yhq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),Customer_service.class);
-                startActivity(intent);
-            }
-        });
         return root;
 
     }

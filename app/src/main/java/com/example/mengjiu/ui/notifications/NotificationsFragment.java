@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
+import com.example.mengjiu.Mypreference;
 import com.example.mengjiu.R;
 import com.example.mengjiu.RegisterActivity;
 import com.google.android.material.textfield.TextInputLayout;
@@ -24,7 +25,7 @@ public class NotificationsFragment extends Fragment {
     private Button loginButton;
     private String user;
     private NotificationsViewModel notificationsViewModel;
-
+    private Mypreference prefs=Mypreference.getInstance();
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -44,7 +45,6 @@ public class NotificationsFragment extends Fragment {
             }
         });
 
-
 //        //实现登录APP模块
 //        loginButton=root.findViewById(R.id.notifications_login_button);
 //        loginButton.setOnClickListener(v->{
@@ -62,12 +62,12 @@ public class NotificationsFragment extends Fragment {
 //                Toast.makeText(getActivity(), getResources().getString(R.string.root_fail_text1), Toast.LENGTH_SHORT).show();
 //                return;
 //            }else {
-//                // 调用retrofit
-//                //TODO 未实现服务器对接
-//                //lab.login(user, p, handler);
+//               // 调用retrofit
+//               //TODO 未实现服务器对接
+//                lab.login(user, p, handler);
 //            }
 //        });
-
+//        prefs.setup(getApplicationContext());
         return root;
 
     }
