@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AllActivity">
+    tools:context=".ShippingActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/all_c7"
+        android:id="@+id/shipping_c7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <SearchView
-            android:id="@+id/all_se"
+            android:id="@+id/shipping_se"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#E4E1E1"
@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/all_li"
+            android:id="@+id/shipping_li"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -33,10 +33,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/all_se">
+            app:layout_constraintTop_toBottomOf="@+id/shipping_se">
 
             <Button
-                android:id="@+id/all_b1"
+                android:id="@+id/shipping_b1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -44,7 +44,7 @@
                 android:text="@string/fragment_dashbord_quanbu" />
 
             <Button
-                android:id="@+id/all_b2"
+                android:id="@+id/shipping_b2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -52,14 +52,14 @@
                 android:text="@string/fragment_dashbord_tobeplaced" />
 
             <Button
-                android:id="@+id/all_b3"
+                android:id="@+id/shipping_b3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/fragment_dashbord_tobedelivered" />
 
             <Button
-                android:id="@+id/all_b4"
+                android:id="@+id/shipping_b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -67,7 +67,7 @@
                 android:text="@string/fragment_dashbord_tobeevaluated" />
 
             <Button
-                android:id="@+id/all_b5"
+                android:id="@+id/shipping_b5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -77,27 +77,27 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
-        android:id="@+id/all_sc"
+        android:id="@+id/shipping_sc"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/all_c10"
+        app:layout_constraintBottom_toTopOf="@+id/shipping_c10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/all_c7">
+        app:layout_constraintTop_toBottomOf="@+id/shipping_c7">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/all_c5"
+            android:id="@+id/shipping_c5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/all_c1"
+                android:id="@+id/shipping_c1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -109,7 +109,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <CheckBox
-                    android:id="@+id/all_ra"
+                    android:id="@+id/shipping_ra"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -118,7 +118,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:id="@+id/all_ha"
+                    android:id="@+id/shipping_ha"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -126,31 +126,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/all_ra"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_ra"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_co"
+                    android:id="@+id/shipping_co"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/all_ha"
-                    app:layout_constraintTop_toTopOf="@+id/all_ha" />
+                    app:layout_constraintStart_toEndOf="@+id/shipping_ha"
+                    app:layout_constraintTop_toTopOf="@+id/shipping_ha" />
 
                 <TextView
-                    android:id="@+id/all_pr"
+                    android:id="@+id/shipping_pr"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_co"
-                    app:layout_constraintTop_toBottomOf="@+id/all_co" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_co"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_co" />
 
                 <TextView
-                    android:id="@+id/all_price"
+                    android:id="@+id/shipping_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -160,45 +160,45 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_product"
+                    android:id="@+id/shipping_product"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_pr"
-                    app:layout_constraintStart_toEndOf="@+id/all_pr" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_pr"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_pr" />
 
                 <TextView
-                    android:id="@+id/all_textView"
+                    android:id="@+id/shipping_textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_price"
-                    app:layout_constraintEnd_toStartOf="@+id/all_price" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_price"
+                    app:layout_constraintEnd_toStartOf="@+id/shipping_price" />
 
                 <TextView
-                    android:id="@+id/all_num"
+                    android:id="@+id/shipping_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_textVie"
-                    app:layout_constraintStart_toEndOf="@+id/all_textVie" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_textVie"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_textVie" />
 
                 <TextView
-                    android:id="@+id/all_textVie"
+                    android:id="@+id/shipping_textVie"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_pr"
-                    app:layout_constraintTop_toBottomOf="@+id/all_pr" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_pr"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_pr" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/all_constraintLayout2"
+                android:id="@+id/shipping_constraintLayout2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -208,10 +208,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/all_c1">
+                app:layout_constraintTop_toBottomOf="@+id/shipping_c1">
 
                 <ImageView
-                    android:id="@+id/all_haerbin2"
+                    android:id="@+id/shipping_haerbin2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -219,31 +219,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/all_radio2"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_radio2"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_commodityname2"
+                    android:id="@+id/shipping_commodityname2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/all_haerbin2"
-                    app:layout_constraintTop_toTopOf="@+id/all_haerbin2" />
+                    app:layout_constraintStart_toEndOf="@+id/shipping_haerbin2"
+                    app:layout_constraintTop_toTopOf="@+id/shipping_haerbin2" />
 
                 <TextView
-                    android:id="@+id/all_production2"
+                    android:id="@+id/shipping_production2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_commodityname2"
-                    app:layout_constraintTop_toBottomOf="@+id/all_commodityname2" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_commodityname2"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_commodityname2" />
 
                 <TextView
-                    android:id="@+id/all_price2"
+                    android:id="@+id/shipping_price2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -253,7 +253,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/all_radio2"
+                    android:id="@+id/shipping_radio2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -262,45 +262,45 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_product2"
+                    android:id="@+id/shipping_product2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_production2"
-                    app:layout_constraintStart_toEndOf="@+id/all_production2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_production2"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_production2" />
 
                 <TextView
-                    android:id="@+id/all_textView2"
+                    android:id="@+id/shipping_textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_price2"
-                    app:layout_constraintEnd_toStartOf="@+id/all_price2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_price2"
+                    app:layout_constraintEnd_toStartOf="@+id/shipping_price2" />
 
                 <TextView
-                    android:id="@+id/all_num2"
+                    android:id="@+id/shipping_num2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_textVie2"
-                    app:layout_constraintStart_toEndOf="@+id/all_textVie2" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_textVie2"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_textVie2" />
 
                 <TextView
-                    android:id="@+id/all_textVie2"
+                    android:id="@+id/shipping_textVie2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_production2"
-                    app:layout_constraintTop_toBottomOf="@+id/all_production2" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_production2"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_production2" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/all_constraintLayout3"
+                android:id="@+id/shipping_constraintLayout3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -310,10 +310,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/all_constraintLayout2">
+                app:layout_constraintTop_toBottomOf="@+id/shipping_constraintLayout2">
 
                 <ImageView
-                    android:id="@+id/all_haerbin3"
+                    android:id="@+id/shipping_haerbin3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -321,31 +321,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/all_radio3"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_radio3"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_commodityname3"
+                    android:id="@+id/shipping_commodityname3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/all_haerbin3"
-                    app:layout_constraintTop_toTopOf="@+id/all_haerbin3" />
+                    app:layout_constraintStart_toEndOf="@+id/shipping_haerbin3"
+                    app:layout_constraintTop_toTopOf="@+id/shipping_haerbin3" />
 
                 <TextView
-                    android:id="@+id/all_production3"
+                    android:id="@+id/shipping_production3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_commodityname3"
-                    app:layout_constraintTop_toBottomOf="@+id/all_commodityname3" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_commodityname3"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_commodityname3" />
 
                 <TextView
-                    android:id="@+id/all_price3"
+                    android:id="@+id/shipping_price3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -355,7 +355,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/all_radio3"
+                    android:id="@+id/shipping_radio3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -364,13 +364,13 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_product3"
+                    android:id="@+id/shipping_product3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_production3"
-                    app:layout_constraintStart_toEndOf="@+id/all_production3" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_production3"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_production3" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -378,31 +378,31 @@
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_price3"
-                    app:layout_constraintEnd_toStartOf="@+id/all_price3" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_price3"
+                    app:layout_constraintEnd_toStartOf="@+id/shipping_price3" />
 
                 <TextView
-                    android:id="@+id/all_num3"
+                    android:id="@+id/shipping_num3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_textVie3"
-                    app:layout_constraintStart_toEndOf="@+id/all_textVie3" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_textVie3"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_textVie3" />
 
                 <TextView
-                    android:id="@+id/all_textVie3"
+                    android:id="@+id/shipping_textVie3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_production3"
-                    app:layout_constraintTop_toBottomOf="@+id/all_production3" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_production3"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_production3" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/all_constraintLayout4"
+                android:id="@+id/shipping_constraintLayout4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -412,10 +412,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/all_constraintLayout3">
+                app:layout_constraintTop_toBottomOf="@+id/shipping_constraintLayout3">
 
                 <ImageView
-                    android:id="@+id/all_haerbin4"
+                    android:id="@+id/shipping_haerbin4"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
@@ -423,31 +423,31 @@
                     android:layout_marginBottom="8dp"
                     android:src="@drawable/haerbin"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/all_radio4"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_radio4"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_commodityname4"
+                    android:id="@+id/shipping_commodityname4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:text="哈尔滨啤酒"
                     android:textSize="14sp"
-                    app:layout_constraintStart_toEndOf="@+id/all_haerbin4"
-                    app:layout_constraintTop_toTopOf="@+id/all_haerbin4" />
+                    app:layout_constraintStart_toEndOf="@+id/shipping_haerbin4"
+                    app:layout_constraintTop_toTopOf="@+id/shipping_haerbin4" />
 
                 <TextView
-                    android:id="@+id/all_production4"
+                    android:id="@+id/shipping_production4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_placeoforigin"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_commodityname4"
-                    app:layout_constraintTop_toBottomOf="@+id/all_commodityname4" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_commodityname4"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_commodityname4" />
 
                 <TextView
-                    android:id="@+id/all_price4"
+                    android:id="@+id/shipping_price4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -457,7 +457,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <CheckBox
-                    android:id="@+id/all_radio4"
+                    android:id="@+id/shipping_radio4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -466,41 +466,143 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/all_product4"
+                    android:id="@+id/shipping_product4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="四川"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_production4"
-                    app:layout_constraintStart_toEndOf="@+id/all_production4" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_production4"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_production4" />
 
                 <TextView
-                    android:id="@+id/all_textView4"
+                    android:id="@+id/shipping_textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fragment_dashbord_rmb"
                     android:textSize="14sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_price4"
-                    app:layout_constraintEnd_toStartOf="@+id/all_price4" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_price4"
+                    app:layout_constraintEnd_toStartOf="@+id/shipping_price4" />
 
                 <TextView
-                    android:id="@+id/all_num4"
+                    android:id="@+id/shipping_num4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="56"
                     android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/all_textVie4"
-                    app:layout_constraintStart_toEndOf="@+id/all_textVie4" />
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_textVie4"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_textVie4" />
 
                 <TextView
-                    android:id="@+id/all_textVie4"
+                    android:id="@+id/shipping_textVie4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:text="@string/fragment_dashbord_quantity"
                     android:textSize="10sp"
-                    app:layout_constraintStart_toStartOf="@+id/all_production4"
-                    app:layout_constraintTop_toBottomOf="@+id/all_production4" />
+                    app:layout_constraintStart_toStartOf="@+id/shipping_production4"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_production4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shipping_constraintLayout5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="#E4E1E1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shipping_constraintLayout4">
+
+                <ImageView
+                    android:id="@+id/shipping_haerbin5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/haerbin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_radio5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/shipping_commodityname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="哈尔滨啤酒"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_haerbin5"
+                    app:layout_constraintTop_toTopOf="@+id/shipping_haerbin5" />
+
+                <TextView
+                    android:id="@+id/shipping_production5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/fragment_dashbord_placeoforigin"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/shipping_commodityname5"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_commodityname5" />
+
+                <TextView
+                    android:id="@+id/shipping_price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="100.8"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/shipping_radio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/shipping_product5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="四川"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_production5"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_production5" />
+
+                <TextView
+                    android:id="@+id/shipping_textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_dashbord_rmb"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_price5"
+                    app:layout_constraintEnd_toStartOf="@+id/shipping_price5" />
+
+                <TextView
+                    android:id="@+id/shipping_num5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="56"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/shipping_textVie5"
+                    app:layout_constraintStart_toEndOf="@+id/shipping_textVie5" />
+
+                <TextView
+                    android:id="@+id/shipping_textVie5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/fragment_dashbord_quantity"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="@+id/shipping_production5"
+                    app:layout_constraintTop_toBottomOf="@+id/shipping_production5" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -508,7 +610,7 @@
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/all_c10"
+        android:id="@+id/shipping_c10"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
@@ -519,7 +621,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <CheckBox
-            android:id="@+id/all_chall"
+            android:id="@+id/shipping_chshipping"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
