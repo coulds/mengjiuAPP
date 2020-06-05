@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         //适用handler，把适配器改为实例变量
 //        rvAdapter =new CommodityRvAdapter(MainActivity.this, p -> {
             //跳转到新界面，使用意图Intent
-//            Intent intent =new Intent(MainActivity.this,SpxqActivity.class);
+//            Intent intent =new Intent(MainActivity.this,InfoActivity.class);
             //TODO 传递用户选中的频道到下一个界面
             //通过位置p得到当前频道channel
 //            Commodity c=lab.getCommodity(p);
