@@ -1,5 +1,6 @@
 package com.example.mengjiu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -42,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
 //    private void failed(){
 //        Toast.makeText(MainActivity.this,"Token无效，禁止访问！",Toast.LENGTH_LONG).show();
 //    }
-
+//
     private Mypreference prefs = Mypreference.getInstance();
-
+//
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,13 +73,13 @@ public class MainActivity extends AppCompatActivity {
         prefs.setup(getApplicationContext());
 
 //        this.commodityRv=findViewById(R.id.commodity_recy);
-        //lambda简化
-        //适用handler，把适配器改为实例变量
+//        //lambda简化
+//        //适用handler，把适配器改为实例变量
 //        rvAdapter =new CommodityRvAdapter(MainActivity.this, p -> {
-            //跳转到新界面，使用意图Intent
+//            //跳转到新界面，使用意图Intent
 //            Intent intent =new Intent(MainActivity.this,InfoActivity.class);
-            //TODO 传递用户选中的频道到下一个界面
-            //通过位置p得到当前频道channel
+//            //TODO 传递用户选中的频道到下一个界面
+//            //通过位置p得到当前频道channel
 //            Commodity c=lab.getCommodity(p);
 //            intent.putExtra("commodity",c);
 //            startActivity(intent);
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 //        this.commodityRv.setLayoutManager(new LinearLayoutManager(this));
 //        Retrofit a= RetrofitClient.getInstance();
     }
-
+//
 //    @Override
 //    protected void onResume(){
 //        super.onResume();
