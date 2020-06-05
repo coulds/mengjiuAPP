@@ -39,6 +39,6 @@ public class Mypreference {
      * @return
      */
     public String currentToken(){
-        return prefs.getString(UserLab.USER_TOKEN,"已登录");
+        return prefs.getString(UserLab.USER_TOKEN,"loginsuccess");
     }
 }

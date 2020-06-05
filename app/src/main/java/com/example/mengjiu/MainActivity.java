@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
+
 //    private RecyclerView commodityRv;
 //    private CommodityRvAdapter rvAdapter;
 //    private CommodityLab lab=CommodityLab.getInstance();
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(MainActivity.this,"Token无效，禁止访问！",Toast.LENGTH_LONG).show();
 //    }
 
+    private Mypreference prefs = Mypreference.getInstance();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -49,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();//隐藏标题栏
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);//透明状态栏
 //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);//透明标题栏
+
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -64,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         if (id==1){
             getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment_container,new NotificationsFragment()).addToBackStack(null).commit();
         }
+        prefs.setup(getApplicationContext());
 
 //        this.commodityRv=findViewById(R.id.commodity_recy);
         //lambda简化

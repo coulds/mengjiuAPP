@@ -22,6 +22,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mengjiu.ui.notifications.NotificationsFragment;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -35,25 +36,26 @@ public class RegisterActivity extends AppCompatActivity {
             if (null!=msg){
                 switch (msg.what){
                     case UserLab.USER_REGISTER_SUCCESS:
-                        ReqisterSucess();
+                        RegisterSuccess();
                         break;
                     case UserLab.USER_REGISTER_NET_ERROR:
-                        ReqisterFailed();
+                        RegisterFailed();
                         break;
                 }
             }
         }
     };
 
-    private void ReqisterSucess(){
+    private void RegisterSuccess(){
+        Log.d(TAG,"开始打印：");
         Toast.makeText(RegisterActivity.this,"注册成功！",Toast.LENGTH_LONG).show();
         //跳转登录界面
         //TODO 跳转失败
-//        Intent intent=new Intent(RegisterActivity.this,LoginActivity.class);
+//        Intent intent=new Intent(RegisterActivity.this, .class);
 //        startActivity(intent);
     }
 
-    private void ReqisterFailed(){
+    private void RegisterFailed(){
         Toast.makeText(RegisterActivity.this,"服务器错误，请稍后再试！",Toast.LENGTH_LONG).show();
     }
 
@@ -134,9 +136,9 @@ public class RegisterActivity extends AppCompatActivity {
 
         //判断密码并获取
         TextInputLayout passwordInput =findViewById(R.id.register_textInputLayout2);
-        TextInputLayout confirmpasswordInput =findViewById(R.id.register_textInputLayout3);
+        TextInputLayout confirmatoryInput =findViewById(R.id.register_textInputLayout3);
         Editable password =passwordInput.getEditText().getText();
-        Editable confirmpassword =confirmpasswordInput.getEditText().getText();
+        Editable confirmpassword =confirmatoryInput.getEditText().getText();
         if (TextUtils.isEmpty(password)){
             Toast.makeText(RegisterActivity.this, "请输入6-20位密码！", Toast.LENGTH_SHORT).show();
             return;
