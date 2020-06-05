@@ -7,7 +7,7 @@
     tools:context=".ui.myorder.Customer_service">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="439dp"
+        android:layout_width="400dp"
         android:layout_height="200dp"
         android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
-        android:layout_width="439dp"
+        android:layout_width="400dp"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"

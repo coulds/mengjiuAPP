@@ -22,6 +22,7 @@ public class MyorderFragment extends Fragment {
     private ImageView my_xyy_jp;
     private ImageView my_xyy_kf;
     private ImageView my_xyy_qb;
+    private ImageView my_xyy_yhq;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         myorderViewModel =
@@ -66,6 +67,14 @@ public class MyorderFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(),Myorderwallet.class);
+                startActivity(intent);
+            }
+        });
+        my_xyy_yhq = root.findViewById(R.id.my_xyy_yhq);
+        my_xyy_yhq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Customer_service.class);
                 startActivity(intent);
             }
         });
