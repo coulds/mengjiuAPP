@@ -98,6 +98,7 @@
             <ImageView
                 android:id="@+id/my_tb_dd"
                 android:layout_width="40dp"
+                android:clickable="true"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
                 android:background="@drawable/dingdan"
@@ -110,6 +111,7 @@
                 android:id="@+id/my_xyy_dd"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
+                android:clickable="true"
                 android:layout_marginEnd="8dp"
                 android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -132,6 +134,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="8dp"
+                android:clickable="true"
                 android:src="@drawable/jiupin"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

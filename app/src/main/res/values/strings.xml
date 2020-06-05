@@ -46,4 +46,5 @@
     <string name="all_shanchu">删除</string>
     <string name="root_fail_text">请输入用户名！</string>
     <string name="root_fail_text1">请输入密码！</string>
+    <string name="myorderwddd">您目前还没有订单哟！</string>
 </resources>

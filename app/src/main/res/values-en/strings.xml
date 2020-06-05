@@ -43,5 +43,8 @@
     <string name="fragment_home_winelist">list</string>
     <string name="fragment_home_service">service</string>
     <string name="fragment_notifications_rememberpassword">remember</string>
-    <string name="all_shanchu">删除</string>
+    <string name="all_shanchu">delete</string>
+    <string name="myorderwddd">You have no order yet!</string>
+    <string name="root_fail_text">Please enter the user name!</string>
+    <string name="root_fail_text1">Please input a password!</string>
 </resources>
