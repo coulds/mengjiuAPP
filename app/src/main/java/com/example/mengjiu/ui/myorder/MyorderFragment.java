@@ -11,12 +11,22 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
+
+import com.example.mengjiu.Customer_service;
+import com.example.mengjiu.My_collection;
+import com.example.mengjiu.Myordercoupon;
+import com.example.mengjiu.Myorderwallet;
+import com.example.mengjiu.Myorderwddd;
 import com.example.mengjiu.R;
 
 public class MyorderFragment extends Fragment {
     private final static String TAG="Mengjiu";
 //    private RecyclerView myddButton;
-
+    private ImageView my_xyy_dd;
+    private ImageView my_xyy_jp;
+    private ImageView my_xyy_kf;
+    private ImageView my_xyy_qb;
+    private ImageView my_xyy_yhq;
     private MyorderViewModel myorderViewModel;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,7 +43,47 @@ public class MyorderFragment extends Fragment {
 //                startActivity(intent);
 //            }
 //        });
-        return root;
 
+     my_xyy_dd=root.findViewById(R.id.my_xyy_dd);
+        my_xyy_dd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Myorderwddd.class);
+                startActivity(intent);
+            }
+        });
+        my_xyy_jp=root.findViewById(R.id.my_xyy_jp);
+        my_xyy_jp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), My_collection.class);
+                startActivity(intent);
+            }
+        });
+        my_xyy_kf=root.findViewById(R.id.my_xyy_kf);
+        my_xyy_kf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Myordercoupon.class);
+                startActivity(intent);
+            }
+        });
+        my_xyy_qb=root.findViewById(R.id.my_xyy_qb);
+        my_xyy_qb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Myorderwallet.class);
+                startActivity(intent);
+            }
+        });
+        my_xyy_yhq=root.findViewById(R.id.my_xyy_yhq);
+        my_xyy_yhq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Customer_service.class);
+                startActivity(intent);
+            }
+        });
+        return root;
     }
 }
