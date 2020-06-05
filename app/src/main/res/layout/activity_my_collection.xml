@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.myorder.My_collection">
+    tools:context="My_collection">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="386dp"

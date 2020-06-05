@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.myorder.Customer_service">
+    tools:context="Customer_service">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="400dp"
@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
-            android:backgroundTint="#989696"
+            android:backgroundTint="#F2F2F2"
             android:text="立即咨询"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
