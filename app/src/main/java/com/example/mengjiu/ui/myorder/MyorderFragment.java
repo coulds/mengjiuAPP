@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -17,6 +18,7 @@ public class MyorderFragment extends Fragment {
 //    private RecyclerView myddButton;
 
     private MyorderViewModel myorderViewModel;
+    private ImageView my_xyy_dd;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -33,6 +35,14 @@ public class MyorderFragment extends Fragment {
 //                startActivity(intent);
 //            }
 //        });
+        my_xyy_dd = root.findViewById(R.id.my_xyy_dd);
+        my_xyy_dd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),Myorderwddd.class);
+                startActivity(intent);
+            }
+        });
         return root;
 
     }
