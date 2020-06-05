@@ -47,4 +47,5 @@
     <string name="myorderwddd">You have no order yet!</string>
     <string name="root_fail_text">Please enter the user name!</string>
     <string name="root_fail_text1">Please input a password!</string>
+    <string name="My_collection">My collection</string>
 </resources>

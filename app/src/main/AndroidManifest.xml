@@ -15,7 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".ui.myorder.Myorderwallet"></activity>
+        <activity android:name=".ui.myorder.Myordercoupon" />
+        <activity android:name=".ui.myorder.My_collection" />
+        <activity android:name=".InfoActivity" />
         <activity android:name=".AllActivity" />
         <activity android:name=".ui.myorder.Myorderwddd" />
         <activity android:name=".RegisterActivity" />
