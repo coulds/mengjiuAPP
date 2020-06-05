@@ -24,6 +24,8 @@ public class Mypreference {
         editor.putString(UserLab.USER_CURRENT,username);
         editor.putString(UserLab.USER_TOKEN,(String) token);
         editor.apply(); //或者 editor.commit();
+
+        
     }
 
     /**
