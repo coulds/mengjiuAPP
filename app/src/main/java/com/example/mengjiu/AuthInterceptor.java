@@ -1,5 +1,7 @@
 package com.example.mengjiu;
 
+import android.util.Log;
+
 import java.io.IOException;
 
 import okhttp3.Interceptor;
@@ -11,11 +13,13 @@ public class AuthInterceptor implements Interceptor {
 
     @Override
     public Response intercept(Chain chain) throws IOException {
+        Log.d("TAG","开始运行");
         Request originalRequest=chain.request();
         Request authRequest=originalRequest.newBuilder()
 //                .addHeader("token","12345678")
                 .addHeader("token",prefs.currentToken())
                 .build();
+
         return chain.proceed(authRequest);
     }
 }
