@@ -18,11 +18,6 @@ public class MyorderFragment extends Fragment {
 //    private RecyclerView myddButton;
 
     private MyorderViewModel myorderViewModel;
-    private ImageView my_xyy_dd;
-    private ImageView my_xyy_jp;
-    private ImageView my_xyy_kf;
-    private ImageView my_xyy_qb;
-    private ImageView my_xyy_yhq;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         myorderViewModel =
