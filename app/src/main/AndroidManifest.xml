@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ShippingActivity"></activity>
+        <activity android:name=".FinishActivity"></activity>
+        <activity android:name=".EvaluatedActivity" />
+        <activity android:name=".ShippingActivity" />
         <activity android:name=".Customer_service" />
         <activity android:name=".Myorderwddd" />
         <activity android:name=".My_collection" />
