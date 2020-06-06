@@ -781,6 +781,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -795,6 +796,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/ic_home_black_24dp"
                 android:text="@string/title_home" />
 
             <Button
@@ -802,6 +805,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/ic1_dashboard_black_24dp"
                 android:text="@string/title_dashboard" />
 
             <Button
@@ -809,6 +814,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/check_box_style"
                 android:text="@string/title_notifications" />
 
             <Button
@@ -816,6 +823,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableTop="@drawable/ic_person_black_24dp"
                 android:text="@string/title_myorder" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

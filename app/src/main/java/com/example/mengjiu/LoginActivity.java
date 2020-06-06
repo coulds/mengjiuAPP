@@ -84,25 +84,6 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        Thread myThread = new Thread() {//创建子线程
-            @Override
-            public void run() {
-                try {
-                    //使程序休眠5分钟
-                    sleep(300000);
-                    //启动LonginActivity
-                    Intent it = new Intent(getApplicationContext(), LoginActivity.class);
-                    startActivity(it);
-                    finish();//关闭当前活动
-                    Looper.prepare();
-                    Toast.makeText(getApplicationContext(), "5分钟体验已结束，请登录！", Toast.LENGTH_LONG).show();
-                    Looper.loop();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        };
-
         //实现登录APP模块
         loginButton=findViewById(R.id.notifications_login_button);
         loginButton.setOnClickListener(v->{

@@ -38,7 +38,8 @@ public class SplashActivity extends AppCompatActivity {
                     //使程序休眠3秒
                     sleep(3000);
                     //启动LonginActivity
-                    Intent it=new Intent(getApplicationContext(),HomeActivity.class);
+                    //TODO 应该跳转主界面，因为主界面错误暂时跳转登录界面
+                    Intent it=new Intent(getApplicationContext(),LoginActivity.class);
                     startActivity(it);
                     finish();//关闭当前活动
                 }catch (Exception e){
