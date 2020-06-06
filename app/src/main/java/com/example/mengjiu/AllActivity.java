@@ -43,5 +43,10 @@ public class AllActivity extends AppCompatActivity {
             Intent intent=new Intent(AllActivity.this,FinishActivity.class);
             startActivity(intent);
         });
+        allb2=findViewById(R.id.all_b2);
+        allb2.setOnClickListener(v->{
+            Intent intent=new Intent(AllActivity.this,DashboardActivity.class);
+            startActivity(intent);
+        });
     }
 }

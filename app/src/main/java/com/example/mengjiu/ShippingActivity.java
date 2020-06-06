@@ -34,11 +34,17 @@ public class ShippingActivity extends AppCompatActivity {
             Log.d(TAG,"点击全部订单！前往全部订单页面");
             Intent intent=new Intent(ShippingActivity.this,EvaluatedActivity.class);
             startActivity(intent);
-        });//点击进入全部订单页
+        });
+        //点击进入全部订单页
         shippingb5=findViewById(R.id.shipping_b5);
         shippingb5.setOnClickListener(v->{
             Log.d(TAG,"点击全部订单！前往全部订单页面");
             Intent intent=new Intent(ShippingActivity.this,FinishActivity.class);
+            startActivity(intent);
+        });
+        shippingb2=findViewById(R.id.shipping_b2);
+        shippingb2.setOnClickListener(v->{
+            Intent intent=new Intent(ShippingActivity.this,DashboardActivity.class);
             startActivity(intent);
         });
     }

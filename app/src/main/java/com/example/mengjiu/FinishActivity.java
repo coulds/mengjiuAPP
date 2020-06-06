@@ -43,5 +43,11 @@ public class FinishActivity extends AppCompatActivity {
             Intent intent=new Intent(FinishActivity.this,EvaluatedActivity.class);
             startActivity(intent);
         });
+
+        finishb2=findViewById(R.id.finish_b2);
+        finishb2.setOnClickListener(v->{
+            Intent intent=new Intent(FinishActivity.this,DashboardActivity.class);
+            startActivity(intent);
+        });
     }
 }

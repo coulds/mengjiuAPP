@@ -38,7 +38,7 @@ public class SplashActivity extends AppCompatActivity {
                     //使程序休眠3秒
                     sleep(3000);
                     //启动LonginActivity
-                    Intent it=new Intent(getApplicationContext(),MainActivity.class);
+                    Intent it=new Intent(getApplicationContext(),HomeActivity.class);
                     startActivity(it);
                     finish();//关闭当前活动
                 }catch (Exception e){

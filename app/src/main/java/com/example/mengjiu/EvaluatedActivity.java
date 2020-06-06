@@ -40,5 +40,10 @@ public class EvaluatedActivity extends AppCompatActivity {
             Intent intent=new Intent(EvaluatedActivity.this,FinishActivity.class);
             startActivity(intent);
         });
+        evaluatedb2=findViewById(R.id.evaluated_b2);
+        evaluatedb2.setOnClickListener(v->{
+            Intent intent=new Intent(EvaluatedActivity.this,DashboardActivity.class);
+            startActivity(intent);
+        });
     }
 }
