@@ -1,19 +1,55 @@
 package com.example.mengjiu;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
+    public static String name;
     private final static String TAG="Mengjiu";
     private Button loginButton1;
     private Button dash_login;
+    private TextView findpasswordButton;
     private Button my_login;
+    private String user;
     private Button home_login;
+    private Button loginButton;
+    final boolean[] tiyan = {true};
+    private UserLab lab =UserLab.getInstance();
+    private Mypreference prefs = Mypreference.getInstance();
+    private Handler handler=new Handler(){
+        @Override
+        public void handleMessage(@NonNull Message msg){
+            if (null!=msg){
+                switch (msg.what){
+                    case UserLab.USER_LOGIN_SUCCESS:
+                        loginSucess(msg.obj);
+                        TextInputLayout username=findViewById(R.id.notifications_textInputLayout1);
+                        name=username.getEditText().getText().toString();
+                        break;
+                    case UserLab.USER_LOGIN_PASSWORD_ERROR:
+                        loginPasswordError();
+                        break;
+                    case UserLab.USER_LOGIN_NET_ERROR:
+                        loginFailed();
+                        break;
+                }
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,5 +83,72 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
             startActivity(intent);
         });
+
+        Thread myThread = new Thread() {//创建子线程
+            @Override
+            public void run() {
+                try {
+                    //使程序休眠5分钟
+                    sleep(300000);
+                    //启动LonginActivity
+                    Intent it = new Intent(getApplicationContext(), LoginActivity.class);
+                    startActivity(it);
+                    finish();//关闭当前活动
+                    Looper.prepare();
+                    Toast.makeText(getApplicationContext(), "5分钟体验已结束，请登录！", Toast.LENGTH_LONG).show();
+                    Looper.loop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        //实现登录APP模块
+        loginButton=findViewById(R.id.notifications_login_button);
+        loginButton.setOnClickListener(v->{
+            TextInputLayout username=findViewById(R.id.notifications_textInputLayout1);
+            TextInputLayout password=findViewById(R.id.notifications_textInputLayout2);
+            user=username.getEditText().getText().toString();
+            String p=password.getEditText().getText().toString();
+
+            //判断
+            if (TextUtils.isEmpty(user)){
+                Toast.makeText(LoginActivity.this,"请输入用户名！",Toast.LENGTH_LONG).show();
+                return;
+            }else if (TextUtils.isEmpty(p)){
+                Toast.makeText(LoginActivity.this,"请输入密码！",Toast.LENGTH_LONG).show();
+                return;
+            }else {
+                // 调用retrofit
+                lab.login(user, p, handler);
+            }
+        });
+        // TODO 还未实现找回密码，目前不能找回密码
+        findpasswordButton=findViewById(R.id.notifications_login_find_passworld);
+        findpasswordButton.setOnClickListener(v->{
+            Log.e(TAG,"找回失败！密码找回通道未开发");
+            //TODO 暂时不跳转
+            //Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+            //startActivity(intent);
+            Toast.makeText(LoginActivity.this,"暂时未开发找回密码通道！",Toast.LENGTH_LONG).show();
+        });
+        prefs.setup(getApplicationContext());
+
+    }
+
+    private void loginSucess(Object token){
+        Toast.makeText(LoginActivity.this,"登录成功！",Toast.LENGTH_LONG).show();
+        Log.d(TAG,"服务器返回的token是："+token);
+        prefs.saveUser(user,(String) token);
+        Intent intent=new Intent(LoginActivity.this,HomeActivity.class);
+        startActivity(intent);
+    }
+
+    private void loginPasswordError(){
+        Toast.makeText(LoginActivity.this,"密码错误，请重新输入！",Toast.LENGTH_LONG).show();
+    }
+
+    private void loginFailed(){
+        Toast.makeText(LoginActivity.this,"服务器错误，请稍后再试！",Toast.LENGTH_LONG).show();
     }
 }

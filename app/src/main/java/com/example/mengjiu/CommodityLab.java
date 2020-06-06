@@ -34,8 +34,8 @@ public class CommodityLab {
     //单例第2步
     private CommodityLab(){
         //把下面的代码换成从网络获取数据
-        //sdata = new ArrayList<>();
-       getData();//调用方法
+        data = new ArrayList<>();
+//       getData();//调用方法
 
     }
 
@@ -66,78 +66,52 @@ public class CommodityLab {
         return this.data.get(position);
     }
 
-    private void getData() {
-        Retrofit retrofit = RetrofitClient.getInstance();
-        CommodityApi api = retrofit.create(CommodityApi.class);
-        Call<Result<List<Commodity>>> call=api.getAllCommoditys();
-        call.enqueue(new Callback<Result<List<Commodity>>>() {
-            @Override
-            public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
-                if (null!=response && null != response.body()){
-                    Log.d(TAG,"从阿里云得到的数据:");
-                    Log.d(TAG,response.body().toString());
-                }else {
-                    Log.w(TAG,"没有数据!!!!");
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Result<List<Commodity>>> call, Throwable t) {
-                Log.e(TAG,"访问网络失败");
-            }
-        });
-
-
-
-    }
-
     /**
      * 访问网络数据得到真实数据,代替以前的test（）方法
      * @param handler
      */
 
-//    private void getData(Handler handler){
-//        //调用单例
-//        Retrofit retrofit=RetrofitClient.getInstance();
-//        CommodityApi api = retrofit.create(CommodityApi.class);
-//        Call<Result<List<Commodity>>> call=api.getAllCommoditys();
-//        //enqueue会自己生成子线程，去执行后续代码
-//        call.enqueue(new Callback<Result<List<Commodity>>>() {
-//            @Override
-//            public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
-////                if (response.code()==403){
-////                    Log.w(TAG,"被禁止访问服务器");
-////                    Message msg=new Message();
-////                    msg.what=MSG_FAILURE;
-////                    handler.sendMessage(msg);
-////                }else
-//                    if (null != response && null != response.body()) {
-//                    Log.d(TAG, "从阿里云得到数据是：");
-//                    Log.d(TAG, response.body().toString());
-////                    Result<List<Commodity>> result=response.body();
-////                    data=result.getData();
-////                    //发出通知
-////                    Message msg=new Message();
-////                    msg.what=MSG_CHANNELS;
-////                    handler.sendMessage(msg);
-//                } else {
-//                    Log.w(TAG, "response没有数据!");
-//                }
-//            }
-//            @Override
-//            public void onFailure(Call<Result<List<Commodity>>> call, Throwable t) {
-//                    Log.e(TAG,"访问网络失败",t);
-//
-//            }
-//        });
-//
-//    }
-
-    public void getHotComments(String channelId, Handler handler){
+    public void getData(Handler handler){
         //调用单例
         Retrofit retrofit=RetrofitClient.getInstance();
         CommodityApi api = retrofit.create(CommodityApi.class);
-        Call<Result<List<Comment>>> call = api.getHotComments(channelId);
+        Call<Result<List<Commodity>>> call=api.getAllCommoditys();
+        //enqueue会自己生成子线程，去执行后续代码
+        call.enqueue(new Callback<Result<List<Commodity>>>() {
+            @Override
+            public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
+                if (response.code()==403){
+                    Log.w(TAG,"被禁止访问服务器");
+                    Message msg=new Message();
+                    msg.what=MSG_FAILURE;
+                    handler.sendMessage(msg);
+                }else if (null != response && null != response.body()) {
+                    Log.d(TAG, "从阿里云得到数据是：");
+                    Log.d(TAG, response.body().toString());
+                    Result<List<Commodity>> result=response.body();
+                    data=result.getData();
+                    //发出通知
+                    Message msg=new Message();
+                    msg.what=MSG_CHANNELS;
+                    handler.sendMessage(msg);
+                } else {
+                    Log.w(TAG, "response没有数据!");
+                }
+            }
+            @Override
+            public void onFailure(Call<Result<List<Commodity>>> call, Throwable t) {
+                    Log.e(TAG,"访问网络失败",t);
+
+            }
+        });
+
+    }
+
+    public void getHotComments(String commodityId, Handler handler){
+        //调用单例
+        Retrofit retrofit=RetrofitClient.getInstance();
+        CommodityApi api = retrofit.create(CommodityApi.class);
+        Call<Result<List<Comment>>> call = api.getHotComments(commodityId);
         call.enqueue(new Callback<Result<List<Comment>>> () {
             @Override
             public void onResponse(Call<Result<List<Comment>>>  call, Response<Result<List<Comment>>>  response) {
@@ -169,14 +143,14 @@ public class CommodityLab {
 
     /**
      * 添加新订单
-     * @param channelId 商品编号
+     * @param commodityId 商品编号
      * @param comment 订单对象
      * @param handler 主线程需要提供一个通讯录hansler
      */
-    public void addComment(String channelId,Comment comment,Handler handler){
+    public void addComment(String commodityId,Comment comment,Handler handler){
         Retrofit retrofit =RetrofitClient.getInstance();
         CommodityApi api=retrofit.create(CommodityApi.class);
-        Call<Commodity> call=api.addComment(channelId,comment);
+        Call<Commodity> call=api.addComment(commodityId,comment);
         call.enqueue(new Callback<Commodity>() {
             @Override
             public void onResponse(Call<Commodity> call, Response<Commodity> response) {

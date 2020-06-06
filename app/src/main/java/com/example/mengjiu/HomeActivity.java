@@ -1,21 +1,66 @@
 package com.example.mengjiu;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.widget.Button;
+import android.widget.Toast;
+
+import retrofit2.Retrofit;
 
 public class HomeActivity extends AppCompatActivity {
     private Button dash_home;
     private Button login_home;
     private Button my_home;
 
+    private RecyclerView commodityRv;
+    private CommodityRvAdapter rvAdapter;
+    private CommodityLab lab=CommodityLab.getInstance();
+    //线程通讯第1步，在主线程创建HandLer
+    private Handler handler=new Handler(){
+        //按快捷键ctrl o
+        @Override
+        public void handleMessage(@NonNull Message msg) {
+            switch (msg.what){
+                case CommodityLab.MSG_CHANNELS:
+                    rvAdapter.notifyDataSetChanged();
+                    break;
+                case CommodityLab.MSG_FAILURE:
+                    failed();
+                    break;
+            }
+        }
+    };
+
+    private void failed(){
+        Toast.makeText(HomeActivity.this,"Token无效，禁止访问！",Toast.LENGTH_LONG).show();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getSupportActionBar().hide();//隐藏标题栏
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        this.commodityRv=findViewById(R.id.commodity_recy);
+        //lambda简化
+        //适用handler，把适配器改为实例变量
+        rvAdapter =new CommodityRvAdapter(HomeActivity.this, p -> {
+            //跳转到新界面，使用意图Intent
+            Intent intent =new Intent(HomeActivity.this,InfoActivity.class);
+            //TODO 传递用户选中的频道到下一个界面
+            //通过位置p得到当前频道commodity
+            Commodity c=lab.getCommodity(p);
+            intent.putExtra("commodity",c);
+            startActivity(intent);
+        });
+        this.commodityRv.setAdapter(rvAdapter);
+        this.commodityRv.setLayoutManager(new LinearLayoutManager(this));
+        Retrofit a=RetrofitClient.getInstance();
 
         //跳转登录页
         login_home=findViewById(R.id.home_login);
@@ -35,5 +80,12 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent=new Intent(HomeActivity.this,MyorderActivity.class);
             startActivity(intent);
         });
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        //把主线程的handler传递给子线程适用
+        lab.getData(handler);
     }
 }

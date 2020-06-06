@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,6 +23,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputLayout;
+
+import okio.Buffer;
 
 public class RegisterActivity extends AppCompatActivity {
     private final static String TAG="Mengjiu";
@@ -43,14 +46,14 @@ public class RegisterActivity extends AppCompatActivity {
             }
         }
     };
+    private Buffer MD5Utils;
 
     private void RegisterSuccess(){
         Log.d(TAG,"开始打印：");
         Toast.makeText(RegisterActivity.this,"注册成功！",Toast.LENGTH_LONG).show();
         //跳转登录界面
-        //TODO 跳转失败
-//        Intent intent=new Intent(RegisterActivity.this, .class);
-//        startActivity(intent);
+        Intent intent=new Intent(RegisterActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 
     private void RegisterFailed(){
@@ -67,6 +70,14 @@ public class RegisterActivity extends AppCompatActivity {
         registerButton=findViewById(R.id.register_button);
         registerButton.setOnClickListener(v->{
             register();
+        });
+
+
+        //TODO 暂时不能设置用户头像
+        useravatar=findViewById(R.id.register_logo);
+        useravatar.setOnClickListener(v->{
+            Log.e(TAG,"不能设置头像！头像上传通道未开发");
+            Toast.makeText(RegisterActivity.this,"暂时未开发头像上传通道！",Toast.LENGTH_LONG).show();
         });
     }
 
@@ -115,12 +126,6 @@ public class RegisterActivity extends AppCompatActivity {
         String errorMessage;
 
         //头像
-        //TODO 暂时不能设置用户头像
-        useravatar=findViewById(R.id.register_logo);
-        useravatar.setOnClickListener(v->{
-            Log.e(TAG,"不能设置头像！头像上传通道未开发");
-            Toast.makeText(RegisterActivity.this,"暂时未开发头像上传通道！",Toast.LENGTH_LONG).show();
-        });
 
         //用户名
         TextInputLayout usernameInput =findViewById(R.id.register_textInputLayout1);
