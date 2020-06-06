@@ -27,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         @Override
         public void handleMessage(@NonNull Message msg) {
             switch (msg.what){
-                case CommodityLab.MSG_CHANNELS:
+                case CommodityLab.MSG_COMMODITYS:
                     rvAdapter.notifyDataSetChanged();
                     break;
                 case CommodityLab.MSG_FAILURE:

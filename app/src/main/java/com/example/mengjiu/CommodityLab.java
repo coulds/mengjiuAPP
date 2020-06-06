@@ -1,6 +1,5 @@
 package com.example.mengjiu;
 
-
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
@@ -25,7 +24,7 @@ public class CommodityLab {
     private  List<Commodity>data;
 
     private final static String TAG="Mengjiu";
-    public final static int MSG_CHANNELS=1;
+    public final static int MSG_COMMODITYS=1;
     public final static int MSG_HOT_COMMENTS=2;
     public final static int MSG_ADD_COMMENT=3;
     public final static int MSG_FAILURE=4;
@@ -92,7 +91,7 @@ public class CommodityLab {
                     data=result.getData();
                     //发出通知
                     Message msg=new Message();
-                    msg.what=MSG_CHANNELS;
+                    msg.what=MSG_COMMODITYS;
                     handler.sendMessage(msg);
                 } else {
                     Log.w(TAG, "response没有数据!");
