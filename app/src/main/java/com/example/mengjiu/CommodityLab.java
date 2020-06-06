@@ -34,7 +34,8 @@ public class CommodityLab {
     private CommodityLab(){
         //把下面的代码换成从网络获取数据
         //sdata = new ArrayList<>();
-       getData();
+       getData();//调用方法
+
     }
 
 
