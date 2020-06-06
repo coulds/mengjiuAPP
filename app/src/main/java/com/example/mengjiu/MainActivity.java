@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 //        this.commodityRv.setLayoutManager(new LinearLayoutManager(this));
 //        Retrofit a= RetrofitClient.getInstance();
     }
+
 //
 //    @Override
 //    protected void onResume(){

@@ -21,6 +21,7 @@ public class CommodityLab {
     //单例第1步
     private static CommodityLab INSTANCE=null;
 
+
     private  List<Commodity>data;
 
     private final static String TAG="Mengjiu";
@@ -32,10 +33,12 @@ public class CommodityLab {
     //单例第2步
     private CommodityLab(){
         //把下面的代码换成从网络获取数据
-        data = new ArrayList<>();
-//        test();
-//        getData();
+        //sdata = new ArrayList<>();
+       getData();
     }
+
+
+
 
     //单例第3步
     public static CommodityLab getInstance(){
@@ -61,46 +64,72 @@ public class CommodityLab {
         return this.data.get(position);
     }
 
+    private void getData() {
+        Retrofit retrofit = RetrofitClient.getInstance();
+        CommodityApi api = retrofit.create(CommodityApi.class);
+        Call<Result<List<Commodity>>> call=api.getAllCommoditys();
+        call.enqueue(new Callback<Result<List<Commodity>>>() {
+            @Override
+            public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
+                if (null!=response && null != response.body()){
+                    Log.d(TAG,"从阿里云得到的数据:");
+                    Log.d(TAG,response.body().toString());
+                }else {
+                    Log.w(TAG,"没有数据!!!!");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Result<List<Commodity>>> call, Throwable t) {
+                Log.e(TAG,"访问网络失败");
+            }
+        });
+
+
+
+    }
+
     /**
      * 访问网络数据得到真实数据,代替以前的test（）方法
      * @param handler
      */
-    public void getData(Handler handler){
-        //调用单例
-        Retrofit retrofit=RetrofitClient.getInstance();
 
-        CommodityApi api = retrofit.create(CommodityApi.class);
-        Call<Result<List<Commodity>>> call=api.getAllCommoditys();
-        //enqueue会自己生成子线程，去执行后续代码
-        call.enqueue(new Callback<Result<List<Commodity>>>() {
-            @Override
-            public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
-                if (response.code()==403){
-                    Log.w(TAG,"被禁止访问服务器");
-                    Message msg=new Message();
-                    msg.what=MSG_FAILURE;
-                    handler.sendMessage(msg);
-                }else if (null != response && null != response.body()) {
-                    Log.d(TAG, "从阿里云得到数据是：");
-                    Log.d(TAG, response.body().toString());
-                    Result<List<Commodity>> result=response.body();
-                    data=result.getData();
-                    //发出通知
-                    Message msg=new Message();
-                    msg.what=MSG_CHANNELS;
-                    handler.sendMessage(msg);
-                } else {
-                    Log.w(TAG, "responew没有数据!");
-                }
-            }
-            @Override
-            public void onFailure(Call<Result<List<Commodity>>> call, Throwable t) {
-                    Log.e(TAG,"访问网络失败",t);
-
-            }
-        });
-
-    }
+//    private void getData(Handler handler){
+//        //调用单例
+//        Retrofit retrofit=RetrofitClient.getInstance();
+//        CommodityApi api = retrofit.create(CommodityApi.class);
+//        Call<Result<List<Commodity>>> call=api.getAllCommoditys();
+//        //enqueue会自己生成子线程，去执行后续代码
+//        call.enqueue(new Callback<Result<List<Commodity>>>() {
+//            @Override
+//            public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
+////                if (response.code()==403){
+////                    Log.w(TAG,"被禁止访问服务器");
+////                    Message msg=new Message();
+////                    msg.what=MSG_FAILURE;
+////                    handler.sendMessage(msg);
+////                }else
+//                    if (null != response && null != response.body()) {
+//                    Log.d(TAG, "从阿里云得到数据是：");
+//                    Log.d(TAG, response.body().toString());
+////                    Result<List<Commodity>> result=response.body();
+////                    data=result.getData();
+////                    //发出通知
+////                    Message msg=new Message();
+////                    msg.what=MSG_CHANNELS;
+////                    handler.sendMessage(msg);
+//                } else {
+//                    Log.w(TAG, "response没有数据!");
+//                }
+//            }
+//            @Override
+//            public void onFailure(Call<Result<List<Commodity>>> call, Throwable t) {
+//                    Log.e(TAG,"访问网络失败",t);
+//
+//            }
+//        });
+//
+//    }
 
     public void getHotComments(String channelId, Handler handler){
         //调用单例

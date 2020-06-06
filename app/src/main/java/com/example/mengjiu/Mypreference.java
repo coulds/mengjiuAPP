@@ -25,7 +25,7 @@ public class Mypreference {
         editor.putString(UserLab.USER_TOKEN,(String) token);
         editor.apply(); //或者 editor.commit();
 
-        
+
     }
 
     /**
