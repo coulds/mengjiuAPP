@@ -30,6 +30,7 @@ public class CommodityLab {
     public final static int MSG_ADD_COMMENT=3;
     public final static int MSG_FAILURE=4;
 
+
     //单例第2步
     private CommodityLab(){
         //把下面的代码换成从网络获取数据
