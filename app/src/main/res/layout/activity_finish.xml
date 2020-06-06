@@ -40,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#FFFDFD"
                 android:text="@string/fragment_dashbord_quanbu" />
 
             <Button
@@ -71,7 +72,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#FFFDFD"
                 android:text="@string/fragment_dashbord_complete" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -134,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="哈尔滨啤酒"
+                    android:text="啤酒"
                     android:textSize="14sp"
                     app:layout_constraintStart_toEndOf="@+id/finish_ha"
                     app:layout_constraintTop_toTopOf="@+id/finish_ha" />

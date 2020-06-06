@@ -21,7 +21,7 @@ public class FinishActivity extends AppCompatActivity {
         setContentView(R.layout.activity_finish);
 
         //点击进入全部订单页
-        finishb1=findViewById(R.id.all_b3);
+        finishb1=findViewById(R.id.finish_b3);
         finishb1.setOnClickListener(v->{
             Log.d(TAG,"点击全部订单！前往全部订单页面");
             Intent intent=new Intent(FinishActivity.this,AllActivity.class);
@@ -29,7 +29,7 @@ public class FinishActivity extends AppCompatActivity {
         });
 
         //点击进入带配送订单页
-        finishb3=findViewById(R.id.all_b4);
+        finishb3=findViewById(R.id.finish_b4);
         finishb3.setOnClickListener(v->{
             Log.d(TAG,"点击待配送订单！前往待配送订单页面");
             Intent intent=new Intent(FinishActivity.this,ShippingActivity.class);
@@ -37,7 +37,7 @@ public class FinishActivity extends AppCompatActivity {
         });
 
         //点击进入待评价订单页
-        finishb4=findViewById(R.id.all_b5);
+        finishb4=findViewById(R.id.finish_b5);
         finishb4.setOnClickListener(v->{
             Log.d(TAG,"点击待评价订单！前往待评价订单页面");
             Intent intent=new Intent(FinishActivity.this,EvaluatedActivity.class);
