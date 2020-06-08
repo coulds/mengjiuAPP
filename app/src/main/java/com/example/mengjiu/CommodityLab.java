@@ -21,25 +21,19 @@ public class CommodityLab {
     private static CommodityLab INSTANCE=null;
 
 
-    private  List<Commodity>data;
+    private  List<Commodity> data;
 
     private final static String TAG="Mengjiu";
     public final static int MSG_COMMODITYS=1;
     public final static int MSG_HOT_COMMENTS=2;
     public final static int MSG_ADD_COMMENT=3;
     public final static int MSG_FAILURE=4;
-
-
     //单例第2步
     private CommodityLab(){
         //把下面的代码换成从网络获取数据
         data = new ArrayList<>();
-//       getData();//调用方法
-
+        //getData();
     }
-
-
-
 
     //单例第3步
     public static CommodityLab getInstance(){
@@ -80,6 +74,7 @@ public class CommodityLab {
             @Override
             public void onResponse(Call<Result<List<Commodity>>> call, Response<Result<List<Commodity>>> response) {
                 if (response.code()==403){
+                    Log.d(TAG,"准备打印日志");
                     Log.w(TAG,"被禁止访问服务器");
                     Message msg=new Message();
                     msg.what=MSG_FAILURE;
