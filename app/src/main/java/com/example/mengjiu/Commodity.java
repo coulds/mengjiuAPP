@@ -12,10 +12,10 @@ public class Commodity implements Serializable {
     private String production;  //商品产地
     private List<Comment> comments;  //下单信息
     private String cover; //商品封面图片
-    private int score; //评分
-    private int abv; //酒精度
+    private String score; //评分
+    private String abv; //酒精度
     private String describe; //描述
-    private int price=0;  //商品价格
+    private String price;  //商品价格
 
     public String getId() {
         return id;
@@ -65,19 +65,19 @@ public class Commodity implements Serializable {
         this.cover = cover;
     }
 
-    public int getScore() {
+    public String getScore() {
         return score;
     }
 
-    public void setScore(int score) {
+    public void setScore(String score) {
         this.score = score;
     }
 
-    public int getAbv() {
+    public String getAbv() {
         return abv;
     }
 
-    public void setAbv(int abv) {
+    public void setAbv(String abv) {
         this.abv = abv;
     }
 
@@ -89,11 +89,11 @@ public class Commodity implements Serializable {
         this.describe = describe;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -106,10 +106,10 @@ public class Commodity implements Serializable {
                 ", production='" + production + '\'' +
                 ", comments=" + comments +
                 ", cover='" + cover + '\'' +
-                ", score=" + score +
-                ", abv=" + abv +
+                ", score='" + score + '\'' +
+                ", abv='" + abv + '\'' +
                 ", describe='" + describe + '\'' +
-                ", price=" + price +
+                ", price='" + price + '\'' +
                 '}';
     }
 }
