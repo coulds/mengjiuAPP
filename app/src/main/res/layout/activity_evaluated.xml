@@ -41,7 +41,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFDFD"
-                android:text="@string/fragment_dashbord_quanbu" />
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_quanbu"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/evaluated_b2"
@@ -49,7 +51,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFDFD"
-                android:text="@string/fragment_dashbord_tobeplaced" />
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_tobeplaced"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/evaluated_b3"
@@ -57,14 +61,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFDFD"
-                android:text="@string/fragment_dashbord_tobedelivered" />
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_tobedelivered"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/evaluated_b4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/fragment_dashbord_tobeevaluated" />
+                android:text="@string/fragment_dashbord_tobeevaluated"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/evaluated_b5"
@@ -72,7 +79,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFDFD"
-                android:text="@string/fragment_dashbord_complete" />
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_complete"
+                android:textColor="@color/button" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -534,6 +543,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="@string/all_shanchu"
+            android:textColor="@color/button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

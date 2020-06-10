@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#E3E0E6</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="gray3">#03DAC5</color>
+    <color name="button">#5C4C4B</color>
+    <color name="ww">#FF1744</color>
 </resources>

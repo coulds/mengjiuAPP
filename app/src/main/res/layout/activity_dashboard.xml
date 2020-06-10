@@ -51,14 +51,17 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#FFFDFD"
-                    android:text="@string/fragment_dashbord_quanbu" />
+                    android:backgroundTint="#FFFFFF"
+                    android:text="@string/fragment_dashbord_quanbu"
+                    android:textColor="@color/button" />
 
                 <Button
                     android:id="@+id/dashboard_button8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/fragment_dashbord_tobeplaced" />
+                    android:text="@string/fragment_dashbord_tobeplaced"
+                    android:textColor="@color/button" />
 
                 <Button
                     android:id="@+id/dashboard_button7"
@@ -66,7 +69,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#FFFDFD"
-                    android:text="@string/fragment_dashbord_tobedelivered" />
+                    android:backgroundTint="#FFFFFF"
+                    android:text="@string/fragment_dashbord_tobedelivered"
+                    android:textColor="@color/button" />
 
                 <Button
                     android:id="@+id/dashboard_button6"
@@ -74,7 +79,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#FFFDFD"
-                    android:text="@string/fragment_dashbord_tobeevaluated" />
+                    android:backgroundTint="#FFFFFF"
+                    android:text="@string/fragment_dashbord_tobeevaluated"
+                    android:textColor="@color/button" />
 
                 <Button
                     android:id="@+id/dashboard_button5"
@@ -82,7 +89,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#FFFDFD"
-                    android:text="@string/fragment_dashbord_complete" />
+                    android:backgroundTint="#FFFFFF"
+                    android:text="@string/fragment_dashbord_complete"
+                    android:textColor="@color/button" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -747,6 +756,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="#F44336"
                 android:text="@string/fragment_dashbord_settlement"
+                android:textColor="@color/ww"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -797,8 +807,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_home_black_24dp"
-                android:text="@string/title_home" />
+                android:text="@string/title_home"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/dashboard_dashboard"
@@ -806,8 +818,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic1_dashboard_black_24dp"
-                android:text="@string/title_dashboard" />
+                android:text="@string/title_dashboard"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/dashboard_login"
@@ -815,8 +829,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/check_box_style"
-                android:text="@string/title_notifications" />
+                android:text="@string/title_notifications"
+                android:textColor="@color/button" />
 
             <Button
                 android:id="@+id/dashboard_myorder"
@@ -824,8 +840,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_person_black_24dp"
-                android:text="@string/title_myorder" />
+                android:text="@string/title_myorder"
+                android:textColor="@color/button" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

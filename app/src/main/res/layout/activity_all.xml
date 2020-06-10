@@ -1,80 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".AllActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllActivity">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/all_c7"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent">
-
-    <SearchView
-        android:id="@+id/all_se"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E4E1E1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/all_li"
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/all_c7"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/all_se">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/all_b1"
-            android:layout_width="wrap_content"
+        <SearchView
+            android:id="@+id/all_se"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/fragment_dashbord_quanbu" />
+            android:background="#E4E1E1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/all_b2"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/all_li"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFDFD"
-            android:text="@string/fragment_dashbord_tobeplaced" />
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/all_se">
 
-        <Button
-            android:id="@+id/all_b3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFDFD"
-            android:text="@string/fragment_dashbord_tobedelivered" />
+            <Button
+                android:id="@+id/all_b1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/fragment_dashbord_quanbu"
+                android:textColor="@color/button" />
 
-        <Button
-            android:id="@+id/all_b4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFDFD"
-            android:text="@string/fragment_dashbord_tobeevaluated" />
+            <Button
+                android:id="@+id/all_b2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#F8F5F5"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_tobeplaced"
+                android:textColor="@color/button" />
 
-        <Button
-            android:id="@+id/all_b5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#FFFDFD"
-            android:text="@string/fragment_dashbord_complete" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/all_b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFDFD"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_tobedelivered"
+                android:textColor="@color/button" />
+
+            <Button
+                android:id="@+id/all_b4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFDFD"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_tobeevaluated"
+                android:textColor="@color/button" />
+
+            <Button
+                android:id="@+id/all_b5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFDFD"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/fragment_dashbord_complete"
+                android:textColor="@color/button" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:id="@+id/all_sc"
@@ -533,7 +542,9 @@ tools:context=".AllActivity">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            android:backgroundTint="#DDDCD9"
             android:text="@string/all_shanchu"
+            android:textColor="#DD0000"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

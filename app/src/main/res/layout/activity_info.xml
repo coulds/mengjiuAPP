@@ -19,12 +19,12 @@
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
             android:background="#FF5722"
             android:clickable="true"
             android:text="立即下单"
-            android:textColor="#F8F5F5"
+            android:textColor="@color/ww"
             android:textColorLink="#F44336"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -36,28 +36,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
             android:background="#FFC107"
             android:clickable="true"
             android:text="加入订单"
-            android:textColor="#F8F5F5"
+            android:textColor="@color/button"
             android:textColorLink="#F44336"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button7" />
+            app:layout_constraintEnd_toStartOf="@+id/button7"
+            app:layout_constraintTop_toTopOf="@+id/button7" />
 
         <ScrollView
             android:id="@+id/scrollView2"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginBottom="70dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -69,15 +67,14 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/info_production"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
                         android:text="推荐"
                         android:textColor="#D1B0B0"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                        app:layout_constraintStart_toEndOf="@+id/textView9"
+                        app:layout_constraintTop_toBottomOf="@+id/info_category" />
 
                     <TextView
                         android:id="@+id/product_price"
@@ -86,119 +83,146 @@
                         android:layout_marginEnd="8dp"
                         android:text="￥25"
                         android:textColor="#F44336"
-                        android:textSize="18sp"
+                        android:textSize="24sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/textView6" />
+                        app:layout_constraintTop_toTopOf="@+id/info_commodityname" />
 
                     <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="350dp"
-                        android:layout_height="37dp"
+                        android:id="@+id/info_commodityname"
+                        android:layout_width="280dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="奶白香咖啡，甜甜的咖啡和爱人一起喝才更有味道，好喝的要和自己喜欢的人一起品尝才好，等你哦"
+                        android:text="奶白香咖啡"
                         android:textColor="#2E2929"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:textStyle="bold|italic"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                        app:layout_constraintTop_toBottomOf="@+id/info_cover" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
-                        android:layout_width="417dp"
-                        android:layout_height="253dp"
+                        android:id="@+id/info_cover"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.0"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/kafeiinfo" />
+                        app:srcCompat="@drawable/serve" />
+
+                    <TextView
+                        android:id="@+id/info_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="好喝好喝，回味无穷"
+                        app:layout_constraintStart_toEndOf="@+id/textView8"
+                        app:layout_constraintTop_toBottomOf="@+id/info_commodityname" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/textView12"
+                        app:layout_constraintTop_toTopOf="@+id/info_abv"
+                        app:srcCompat="@drawable/fenxiang1" />
+
+                    <TextView
+                        android:id="@+id/info_abv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帮我选"
+                        android:textColor="#C89797"
+                        app:layout_constraintStart_toEndOf="@+id/textView10"
+                        app:layout_constraintTop_toTopOf="@+id/info_production" />
+
+                    <TextView
+                        android:id="@+id/info_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="点赞：165w"
+                        android:textColor="#F44336"
+                        app:layout_constraintEnd_toEndOf="@+id/product_price"
+                        app:layout_constraintTop_toBottomOf="@+id/info_commodityname" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:text="分享"
+                        app:layout_constraintEnd_toEndOf="@+id/info_score"
+                        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+                    <TextView
+                        android:id="@+id/info_describe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="优选咖啡等你来选哦！！！！"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_dashbord_rmb"
+                        android:textColor="#F50057"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/product_price"
+                        app:layout_constraintEnd_toStartOf="@+id/product_price"
+                        app:layout_constraintTop_toTopOf="@+id/product_price" />
 
                     <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="评论：好喝好喝，回味无穷"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                        android:text="@string/fenli"
+                        app:layout_constraintBottom_toBottomOf="@+id/info_category"
+                        app:layout_constraintStart_toStartOf="@+id/info_commodityname"
+                        app:layout_constraintTop_toTopOf="@+id/info_category" />
 
-                    <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        app:layout_constraintEnd_toStartOf="@+id/textView12"
-                        app:layout_constraintTop_toTopOf="@+id/textView10"
-                        app:srcCompat="@drawable/fenxiang1" />
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_dashbord_placeoforigin"
+                        app:layout_constraintBottom_toBottomOf="@+id/info_production"
+                        app:layout_constraintStart_toStartOf="@+id/textView8"
+                        app:layout_constraintTop_toTopOf="@+id/info_production" />
 
                     <TextView
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="144dp"
-                        android:text="帮我选"
-                        android:textColor="#C89797"
-                        app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                        app:layout_constraintStart_toEndOf="@+id/textView9" />
+                        android:layout_marginStart="100dp"
+                        android:text="@string/pf"
+                        app:layout_constraintBottom_toBottomOf="@+id/info_abv"
+                        app:layout_constraintStart_toEndOf="@+id/info_production"
+                        app:layout_constraintTop_toTopOf="@+id/info_abv" />
 
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:text="点赞：165w"
-                        android:textColor="#F44336"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginEnd="8dp"
-                        android:text="分享"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/imageView7" />
-
-                    <ImageView
-                        android:id="@+id/imageView9"
-                        android:layout_width="95dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="17dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/textView9"
-                        app:srcCompat="@drawable/kafei2" />
-
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="95dp"
-                        android:layout_height="60dp"
-                        app:layout_constraintEnd_toStartOf="@+id/imageView12"
-                        app:layout_constraintStart_toEndOf="@+id/imageView9"
-                        app:layout_constraintTop_toTopOf="@+id/imageView9"
-                        app:srcCompat="@drawable/kafei3" />
-
-                    <ImageView
-                        android:id="@+id/imageView12"
-                        android:layout_width="90dp"
-                        android:layout_height="60dp"
-                        android:layout_marginEnd="16dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/imageView10"
-                        app:srcCompat="@drawable/kafei4" />
+                        android:text="@string/jjd"
+                        app:layout_constraintBottom_toBottomOf="@+id/info_score"
+                        app:layout_constraintEnd_toStartOf="@+id/info_score"
+                        app:layout_constraintTop_toTopOf="@+id/info_score" />
 
                     <TextView
                         android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginTop="16dp"
-                        android:text="优选咖啡等你来选哦！！！！"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+                        android:layout_marginTop="32dp"
+                        android:text="@string/miaos"
+                        app:layout_constraintStart_toStartOf="@+id/info_describe"
+                        app:layout_constraintTop_toBottomOf="@+id/info_production" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>

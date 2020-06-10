@@ -25,8 +25,8 @@
 
             <ImageView
                 android:id="@+id/product_img9"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginStart="4dp"
                 android:src="@drawable/kafen1"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -37,20 +37,19 @@
                 android:id="@+id/product_number9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="001"
-                app:layout_constraintStart_toEndOf="@+id/product_img9"
+                android:layout_marginTop="8dp"
+                android:text="@string/pf"
+                app:layout_constraintStart_toStartOf="@+id/product_desribe9"
                 app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
 
             <TextView
                 android:id="@+id/product_desribe9"
                 android:layout_width="201dp"
                 android:layout_height="43dp"
-                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:text="产地于澳大利亚精挑细选可可，保证好质量"
                 android:textSize="14sp"
-                app:layout_constraintStart_toEndOf="@+id/product_img9"
+                app:layout_constraintStart_toStartOf="@+id/product_title9"
                 app:layout_constraintTop_toBottomOf="@+id/product_title9" />
 
             <TextView
@@ -70,12 +69,22 @@
                 android:id="@+id/product_score9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
                 android:text="评分:9.6"
                 android:textColor="#F44336"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/product_number9"
-                app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
+                app:layout_constraintBottom_toBottomOf="@+id/product_number9"
+                app:layout_constraintStart_toEndOf="@+id/product_number9" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_dashbord_rmb"
+                android:textColor="@color/ww"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/product_price9"
+                app:layout_constraintEnd_toStartOf="@+id/product_price9"
+                app:layout_constraintTop_toTopOf="@+id/product_price9" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

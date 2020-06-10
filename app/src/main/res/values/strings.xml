@@ -48,4 +48,8 @@
     <string name="root_fail_text1">请输入密码！</string>
     <string name="myorderwddd">您目前还没有订单哟！</string>
     <string name="My_collection">我的收藏</string>
+    <string name="fenli">类别:</string>
+    <string name="pf">评分:</string>
+    <string name="jjd">酒精度:</string>
+    <string name="miaos">描述:</string>
 </resources>

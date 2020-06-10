@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
     tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,6 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_home_black_24dp"
                 android:text="@string/title_home" />
 
@@ -37,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_dashboard_black_24dp"
                 android:text="@string/title_dashboard" />
 
@@ -46,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic1_fiber_manual_record_black_24dp"
                 android:text="@string/title_notifications" />
 
@@ -55,6 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_person_black_24dp"
                 android:text="@string/title_myorder" />
         </LinearLayout>
@@ -73,6 +78,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/notifications_textInputLayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
@@ -80,10 +86,10 @@
             app:endIconMode="clear_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/notifications_logo">
+            app:layout_constraintTop_toBottomOf="@+id/notifications_logo"
+            app:startIconDrawable="@drawable/ic_person_black_24dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/notifications_registerinput1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionNext"
@@ -92,6 +98,7 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/notifications_textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -99,10 +106,10 @@
             app:endIconMode="password_toggle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/notifications_textInputLayout1">
+            app:layout_constraintTop_toBottomOf="@+id/notifications_textInputLayout1"
+            app:startIconDrawable="@drawable/ic_baseline_https_24">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/notifications_registerinput2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionDone"
@@ -117,7 +124,7 @@
             android:layout_marginTop="16dp"
             android:background="#FF9800"
             android:text="@string/login_re"
-            android:textColor="#F3EFEF"
+            android:textColor="@color/ww"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -140,7 +147,7 @@
             android:layout_marginTop="50dp"
             android:background="#03A9F4"
             android:text="@string/login_lo"
-            android:textColor="#F3EFEF"
+            android:textColor="@color/button"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.503"
@@ -157,7 +164,8 @@
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/notifications_login_radiaButton"
-            app:layout_constraintEnd_toEndOf="@+id/notifications_textInputLayout2" />
+            app:layout_constraintEnd_toEndOf="@+id/notifications_textInputLayout2"
+            app:layout_constraintTop_toTopOf="@+id/notifications_login_radiaButton" />
 
         <CheckBox
             android:id="@+id/notifications_login_radiaButton"

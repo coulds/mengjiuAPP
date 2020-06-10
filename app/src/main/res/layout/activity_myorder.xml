@@ -28,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_home_black_24dp"
                 android:text="@string/title_home" />
 
@@ -37,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic_dashboard_black_24dp"
                 android:text="@string/title_dashboard" />
 
@@ -46,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/check_box_style"
                 android:text="@string/title_notifications" />
 
@@ -55,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
                 android:drawableTop="@drawable/ic1_person_black_24dp"
                 android:text="@string/title_myorder" />
         </LinearLayout>

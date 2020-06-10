@@ -67,16 +67,18 @@ public class CommodityRvAdapter extends RecyclerView.Adapter< CommodityRvAdapter
      */
     public class CommodityRowHolder extends RecyclerView.ViewHolder{
         private TextView commodityname; //商品标题 实例对象
-        private TextView describe;//描述
+        private TextView production;//产地
         private ImageView cover; //图片
         private TextView price;//价格
+        private TextView productscore; //评分
 
         public CommodityRowHolder(@NonNull View row) {
             super(row);
             this.commodityname=row.findViewById(R.id.product_title9);
-            this.describe=row.findViewById(R.id.product_desribe9);
+            this.production=row.findViewById(R.id.product_desribe9);
             this.cover=row.findViewById(R.id.product_img9);
             this.price=row.findViewById(R.id.product_price9);
+            this.productscore=row.findViewById(R.id.product_score9);
             row.setOnClickListener((v)->{
                 int position= getLayoutPosition();
                 Log.d("Mengjiu", position+"行被点击啦！");
@@ -90,8 +92,9 @@ public class CommodityRvAdapter extends RecyclerView.Adapter< CommodityRvAdapter
          */
         public void bind(Commodity c){
             this.commodityname.setText(c.getCommodityname());
-            this.describe.setText(c.getDescribe());
-            this.price.setText(c.getPrice()+"");
+            this.production.setText(c.getDescribe());
+            this.price.setText(c.getPrice());
+            this.productscore.setText(c.getScore());
             //从网络获取图片
             //this.cover.setImageResource(c.getCover());
             Log.d("Mengjiu","商品"+c.getCommodityname()+"准备从网络加载图片"+c.getCover());
