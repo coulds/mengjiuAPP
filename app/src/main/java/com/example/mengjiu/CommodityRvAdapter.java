@@ -92,7 +92,7 @@ public class CommodityRvAdapter extends RecyclerView.Adapter< CommodityRvAdapter
          */
         public void bind(Commodity c){
             this.commodityname.setText(c.getCommodityname());
-            this.production.setText(c.getDescribe());
+            this.production.setText(c.getProduction());
             this.price.setText(c.getPrice());
             this.productscore.setText(c.getScore());
             //从网络获取图片

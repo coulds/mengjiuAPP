@@ -39,17 +39,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="@string/pf"
-                app:layout_constraintStart_toStartOf="@+id/product_desribe9"
+                app:layout_constraintStart_toStartOf="@+id/textView26"
                 app:layout_constraintTop_toBottomOf="@+id/product_desribe9" />
 
             <TextView
                 android:id="@+id/product_desribe9"
-                android:layout_width="201dp"
-                android:layout_height="43dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="产地于澳大利亚精挑细选可可，保证好质量"
+                android:text="保证好质量"
                 android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/product_title9"
+                app:layout_constraintStart_toEndOf="@+id/textView26"
                 app:layout_constraintTop_toBottomOf="@+id/product_title9" />
 
             <TextView
@@ -85,6 +85,15 @@
                 app:layout_constraintBottom_toBottomOf="@+id/product_price9"
                 app:layout_constraintEnd_toStartOf="@+id/product_price9"
                 app:layout_constraintTop_toTopOf="@+id/product_price9" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_dashbord_placeoforigin"
+                app:layout_constraintBottom_toBottomOf="@+id/product_desribe9"
+                app:layout_constraintStart_toStartOf="@+id/product_title9"
+                app:layout_constraintTop_toTopOf="@+id/product_desribe9" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
