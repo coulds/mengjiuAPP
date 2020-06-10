@@ -8,6 +8,7 @@ public class Myorderwallet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();//隐藏标题栏
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myorderwallet);
     }

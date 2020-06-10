@@ -7,38 +7,32 @@
     tools:context="My_collection">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="386dp"
-        android:layout_height="194dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/My_collection"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <ImageView
             android:id="@+id/baiwei"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="24dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baiwei" />
 
         <TextView
             android:id="@+id/commodityname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
             android:text="百威啤酒"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/baiwei"
@@ -48,7 +42,7 @@
             android:id="@+id/production"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="8dp"
             android:text="产地:武汉"
             app:layout_constraintStart_toStartOf="@+id/commodityname"
             app:layout_constraintTop_toBottomOf="@+id/commodityname" />
@@ -57,8 +51,8 @@
             android:id="@+id/number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:text="数量:24罐"
+            android:layout_marginTop="8dp"
+            android:text="评分：9.4"
             app:layout_constraintStart_toStartOf="@+id/production"
             app:layout_constraintTop_toBottomOf="@+id/production" />
 
@@ -68,8 +62,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:text="￥168.3"
-            app:layout_constraintBottom_toBottomOf="@id/number"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/number" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

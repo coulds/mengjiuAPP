@@ -4,11 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Myorderwddd extends AppCompatActivity {
+public class Mykehuzx extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();//隐藏标题栏
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_myorderwddd);
+        setContentView(R.layout.activity_mykehuzx);
     }
 }

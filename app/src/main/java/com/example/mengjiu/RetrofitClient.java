@@ -17,7 +17,7 @@ public class RetrofitClient {
         if (INSTANCE==null){
             //准备拦截器
             Moshi moshi = new Moshi.Builder()
-                    .add(new MyDateAdapter())
+                    .add(new My_favorite())
                     .build();
 
             OkHttpClient okClient=new OkHttpClient.Builder()

@@ -16,7 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MyorderActivity"></activity>
+        <activity android:name=".Mykehuzx"></activity>
+        <activity android:name=".My_favorite" />
+        <activity android:name=".MyorderActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".HomeActivity" />
@@ -24,7 +26,6 @@
         <activity android:name=".EvaluatedActivity" />
         <activity android:name=".ShippingActivity" />
         <activity android:name=".Customer_service" />
-        <activity android:name=".Myorderwddd" />
         <activity android:name=".My_collection" />
         <activity android:name=".Myordercoupon" />
         <activity android:name=".Myorderwallet" />
