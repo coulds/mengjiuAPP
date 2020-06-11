@@ -168,17 +168,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
                     <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/fragment_dashbord_rmb"
-                        android:textColor="#F50057"
-                        android:textSize="24sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/product_price"
-                        app:layout_constraintEnd_toStartOf="@+id/product_price"
-                        app:layout_constraintTop_toTopOf="@+id/product_price" />
-
-                    <TextView
                         android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
