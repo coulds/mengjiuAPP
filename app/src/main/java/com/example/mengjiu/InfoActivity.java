@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -46,13 +47,14 @@ public class InfoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
         //init();
-        Serializable s=getIntent().getSerializableExtra("commodity");
-        Log.d(TAG,"取得当前频道对象是："+s);
-        if (s!=null&&s instanceof Commodity){
-            currentCommodity=(Commodity) s;
+        Serializable s = getIntent().getSerializableExtra("commodity");
+        Log.d(TAG, "取得当前频道对象是：" + s);
+        if (s != null && s instanceof Commodity) {
+            currentCommodity = (Commodity) s;
         }
         updateUI();
     }
+
 
     private void updateUI(){
         commodityname=findViewById(R.id.info_commodityname);
