@@ -8,7 +8,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import retrofit2.Retrofit;
@@ -17,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button dash_home;
     private Button login_home;
     private Button my_home;
-
+    private ImageView cake_img;
     private RecyclerView commodityRv;
     private CommodityRvAdapter rvAdapter;
     private CommodityLab lab=CommodityLab.getInstance();
@@ -47,6 +49,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         this.commodityRv=findViewById(R.id.commodity_recy);
+
         //lambda简化
         //适用handler，把适配器改为实例变量
         rvAdapter =new CommodityRvAdapter(HomeActivity.this, p -> {
@@ -80,7 +83,17 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent=new Intent(HomeActivity.this,MyorderActivity.class);
             startActivity(intent);
         });
+//        this.cake_img=findViewById(R.id.home_kafei_img);
+//        cake_img.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(HomeActivity.this,InfoActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
     }
+
 
     @Override
     protected void onResume(){

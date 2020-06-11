@@ -77,7 +77,7 @@ public class MyorderActivity extends AppCompatActivity {
         //跳转设置
         myshez=findViewById(R.id.my_shez);
         myshez.setOnClickListener(v->{
-            Intent intent=new Intent(MyorderActivity.this, My_favorite.class);
+            Intent intent=new Intent(MyorderActivity.this, SetUpActivity.class);
             startActivity(intent);
         });
     }
