@@ -39,9 +39,9 @@ public class InfoActivity extends AppCompatActivity {
         production=findViewById(R.id.info_production);
         production.setText(currentCommodity.getProduction());
         score=findViewById(R.id.info_score);
-        score.setText(currentCommodity.getScore());
+        score.setText(currentCommodity.getAbv());
         abv=findViewById(R.id.info_abv);
-        abv.setText(currentCommodity.getAbv());
+        abv.setText(currentCommodity.getScore());
         describe=findViewById(R.id.info_describe);
         describe.setText(currentCommodity.getDescribe());
         price=findViewById(R.id.product_price);

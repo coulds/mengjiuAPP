@@ -60,7 +60,7 @@ public class MyorderActivity extends AppCompatActivity {
         myyhq=findViewById(R.id.my_yhq);
         myyhq.setOnClickListener(v->{
             Intent intent=new Intent(MyorderActivity.this,Myordercoupon.class);
-            startActivity(intent); 
+            startActivity(intent);
 
         });
         //跳转钱包
