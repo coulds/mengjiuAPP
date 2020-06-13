@@ -10,5 +10,6 @@ public class DringActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dring);
+        getSupportActionBar().hide();//隐藏标题栏
     }
 }

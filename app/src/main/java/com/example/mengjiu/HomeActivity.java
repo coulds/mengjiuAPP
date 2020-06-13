@@ -16,6 +16,7 @@ import android.widget.Toast;
 import retrofit2.Retrofit;
 
 public class HomeActivity extends AppCompatActivity {
+    private ImageView dring_home;
     private ImageView list_home;
     private ImageView kafei_home;
     private Button dash_home;
@@ -96,6 +97,12 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this,ListActivity.class);
             startActivity(intent);
         });
+        dring_home = findViewById(R.id.home_yingpin_img);
+        dring_home.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this,DringActivity.class);
+            startActivity(intent);
+        });
+
 
 //        this.cake_img=findViewById(R.id.home_kafei_img);
 //        cake_img.setOnClickListener(new View.OnClickListener() {
