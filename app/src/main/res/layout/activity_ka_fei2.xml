@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KaFeiActivity2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_fuwu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_fuwu_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/serve"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_home_service"
+                app:layout_constraintEnd_toEndOf="@+id/home_fuwu_img"
+                app:layout_constraintStart_toStartOf="@+id/home_fuwu_img"
+                app:layout_constraintTop_toBottomOf="@+id/home_fuwu_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_jiudan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/home_yingpin"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_jiudan_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/jiu1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_jiudan_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_home_winelist"
+                app:layout_constraintEnd_toEndOf="@+id/home_jiudan_img"
+                app:layout_constraintStart_toStartOf="@+id/home_jiudan_img"
+                app:layout_constraintTop_toBottomOf="@+id/home_jiudan_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_yingpin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toEndOf="@+id/home_kafei"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_yingpin_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/yingpin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_yingpin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_home_drink"
+                app:layout_constraintEnd_toEndOf="@+id/home_yingpin_img"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/home_yingpin_img"
+                app:layout_constraintTop_toBottomOf="@+id/home_yingpin_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_kafei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/home_kafei_img"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="#FBFBFB"
+                android:src="@drawable/kafei"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_kafei_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_home_coffee"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/home_kafei_img"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/home_kafei_img"
+                app:layout_constraintTop_toBottomOf="@+id/home_kafei_img" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout13"
+        android:layout_width="409dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout12">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="奶白香咖啡"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="001"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥25"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.6"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="摩卡冰摇"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="002"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地美国加州的小村庄，美味香甜回味无穷"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥25"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.7"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="原味拿铁"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="003"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地为非洲，每一颗都是精品和上帝制造"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥28"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.2"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="卡布奇洛"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="004"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地与加拿大，经过多重赛选和封装，都是好品质"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥32"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.3"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="意式浓缩"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="005"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地于意大利，简单又可口，就等你来购买"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥22"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.5"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="美式咖啡"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_6"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="006"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地为美国，确保每一颗可可都是美国本地"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥35"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.6"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/product_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="哥斯达黎加"
+                        android:textColor="#0B0000"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/product_img1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/kafei_1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_number1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="007"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+                    <TextView
+                        android:id="@+id/product_desribe1"
+                        android:layout_width="201dp"
+                        android:layout_height="43dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="产地于澳大利亚精挑细选可可，保证好质量"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@+id/product_img1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_title1" />
+
+                    <TextView
+                        android:id="@+id/product_price1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="￥25"
+                        android:textColor="#F44336"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/product_score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="评分:9.3"
+                        android:textColor="#F44336"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/product_number1"
+                        app:layout_constraintTop_toBottomOf="@+id/product_desribe1" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
