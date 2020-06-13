@@ -16,7 +16,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".KaFeiActivity2"></activity>
+        <activity android:name=".DringActivity"></activity>
+        <activity android:name=".ListActivity" />
+        <activity android:name=".KaFeiActivity2" />
         <activity android:name=".SetUpActivity" />
         <activity android:name=".Mykehuzx" />
         <activity android:name=".My_favorite" />

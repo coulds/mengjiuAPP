@@ -16,6 +16,7 @@ import android.widget.Toast;
 import retrofit2.Retrofit;
 
 public class HomeActivity extends AppCompatActivity {
+    private ImageView list_home;
     private ImageView kafei_home;
     private Button dash_home;
     private Button login_home;
@@ -84,11 +85,18 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent=new Intent(HomeActivity.this,MyorderActivity.class);
             startActivity(intent);
         });
+        //顶部商品中咖啡的跳转
         kafei_home = findViewById(R.id.home_kafei_img);
         kafei_home.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this,KaFeiActivity2.class);
             startActivity(intent);
         });
+        list_home = findViewById(R.id.home_jiudan_img);
+        list_home.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this,ListActivity.class);
+            startActivity(intent);
+        });
+
 //        this.cake_img=findViewById(R.id.home_kafei_img);
 //        cake_img.setOnClickListener(new View.OnClickListener() {
 //            @Override
