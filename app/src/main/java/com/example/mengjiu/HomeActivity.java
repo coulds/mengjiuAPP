@@ -19,6 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     private ImageView dring_home;
     private ImageView list_home;
     private ImageView kafei_home;
+    private ImageView home_fuwu_img;
     private Button dash_home;
     private Button login_home;
     private Button my_home;
@@ -102,7 +103,11 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this,DringActivity.class);
             startActivity(intent);
         });
-
+        home_fuwu_img = findViewById(R.id.home_fuwu_img);
+        home_fuwu_img.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this,Mykehuzx.class);
+            startActivity(intent);
+        });
 
 //        this.cake_img=findViewById(R.id.home_kafei_img);
 //        cake_img.setOnClickListener(new View.OnClickListener() {
