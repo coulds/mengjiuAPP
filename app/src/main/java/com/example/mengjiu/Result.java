@@ -40,5 +40,7 @@ public class Result<T> {
                 ", message='" + message + '\'' +
                 ", data=" + data +
                 '}';
+
+        
     }
 }
